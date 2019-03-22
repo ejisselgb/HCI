@@ -1,0 +1,17 @@
+#main	{
+	background-color:white;
+	margin: 25px;
+	padding: 25px;
+	border-radius: 25px;
+}
+.head{
+	background-color: lightgreen;
+	height: 90px;
+    font-family: Raleway
+}
+
+.description{
+	float: right;
+}
+
+
