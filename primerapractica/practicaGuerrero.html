@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Práctica1</title>
+	<link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="diseño.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -9,114 +10,143 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="app.js" charset="utf-8"></script>
 </head>
-<body style="background-color: #FFA771" >
 
+
+<body style="background-color: #FFB07E" >
 		<div class="wrapper">
-			<h1>Bienvenido a mi sitio web de recetas</h1>
-			<p> Aquí aprenderás como hacer un pie de limón.</p>
+			<h1 class="principal">Bienvenido a mi sitio web de recetas</h1>
+			<p class="description"> Aquí aprenderás como hacer un pie de limón.</p>
 		</div>
-	
+
+<!--**************************Carrusel inicial********************************************-->
+
 	<div class="container-fluid">
+
 		<div class="row" align="center">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  	</ol>
-  <div class="carousel-inner" id="carrusel">
-    <div class="carousel-item active">
-      <img src="./Imagenes/im1.jpg" class="d-block w-100" alt="">
-    </div>
-    <div class="carousel-item">
-      <img src="./Imagenes/im2.jpg" class="d-block w-100" alt="">
-    </div>
-    <div class="carousel-item">
-      <img src="./Imagenes/im3.png" class="d-block w-100" alt="">
-    </div>
-  </div>
 
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+    		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  		</ol>
+  	<div class="carousel-inner" id="carrusel">
+
+    	<div class="carousel-item active">
+      		<img src="./Imagenes/im1.jpg" class="d-block w-100" alt="un pie de limón">
+    	</div>
+
+    	<div class="carousel-item">
+      		<img src="./Imagenes/im2.jpg" class="d-block w-100" alt="un pie de limón">
+    	</div>
+
+    	<div class="carousel-item">
+      		<img src="./Imagenes/pieli.png" class="d-block w-100" alt="un pie de limón">
+    	</div>
+  	</div>
+
+  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    	<span class="sr-only">Previous</span>
+  	</a>
+  	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    	<span class="sr-only">Next</span>
+  	</a>
 
 	</div>
 			</div>
 		</div>
+	</div>
+<!--****************************************Sección dudas************************************************-->
+	<div class="container-fluid dudas">
 
-	<div class="container-fluid">
+		
+		<div class="row">
 
-	<h2>Dudas...</h2>
-	<div class="row">
-	<div class="col-med-2"></div>
-	<div class="col-med-2">
-	<p>A continuación podrás leer las dudas más frecuentes sobre la realización del pie de limón.</p>
+			<div class="col-md-2"></div>
+			<div class="col-md-8 containerD">
+				<h2 class="subtitulos">Dudas</h2>
+				<p class="textos">A continuación podrás leer las dudas más frecuentes sobre la realización del pie de limón.</p>
+
+				<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="No, es muy sencillo de realizar. Ve a la sección de ingredientes para conocer más.">¿Se necesitan muchos ingredientes?</button>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
 	</div>
-	</div>
-	</div>
-	<div class="container-fluid">
-	<h3>¿Se necesitan muchos ingredientes?</h3>
-	<div class="row">
-	<div class="col-med-2"></div>
-	<div class="col-med-2">
-	<p>No, es muy sencillo de realizar. Ve a la sección de ingredientes para conocer más.</p>
-	</div>
-	</div>
-	</div>
-	<hr>
+
+
+<!--*************************************Ingredientes*******************************************-->
 	<div>
-	<div class="container-fluid">
-	<h2>Ingredientes</h2>
-	<div class="row">
-	<div class="col-med-2"></div>
-	<div class="col-med-2">
-	<ul>
-		<li> 2 ½ TAZAS DE HARINA </li>
+		<h2 class="subtitulos">Ingredientes</h2>
+		<div class="container-fluid">
 
-		<li> 1 TAZA DE AZÚCAR FLOR </li>
+		<div class="row ingr-cont">
+			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				<img src="./Imagenes/harina.jpg" class="ingred" alt="harina">
+				<p class="ingText">2 ½ Tazas de harina</p>
+			</div>
+
+			<div class="col-md-3">
+				<img src="./Imagenes/azucar.jpg" class="ingred" alt="azucar">
+				<p class="ingText">1 Taza de azúcar</p>
+			</div>
+
+			<div class="col-md-3">
+				<img src="./Imagenes/margarina.jpg" class="ingred" alt="margarina">
+				<p class="ingText">¾ Taza de margarina</p>
+			</div>
+			<div class="col-md-1"></div>
 		</div>
-	</ul>
-		<div class="col-med-2"></div>
-		<div class="col-med-2">
-	<ul>
-		<li> ¾ TAZA DE MARGARINA </li>
 
-  		<li> 1 HUEVO </li>
-  		</div>
-  	</ul>
-  		<div class="col-med-2"></div>
-		<div class="col-med-2">
-	<ul>
-		<li> AGUA (SI ES NECESARIO) </li>
+		<div class="row ingr-cont">
+			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				<img src="./Imagenes/huevo.jpg" class="ingred" alt="huevo">
+				<p class="ingText">1 Huevo</p>
+			</div>
 
-		<li> 2 TARROS DE LECHE CONDENSADA NESTLÉ® </li>
+			<div class="col-md-3">
+				<img src="./Imagenes/agua.jpg" class="ingred" alt="agua">
+				<p class="ingText">Agua</p>
+			</div>
+
+			<div class="col-md-3">
+				<img src="./Imagenes/LecheCond2.jpg" class="ingred" alt="leche condensada">
+				<p class="ingText">2 Tarros de leche condensada</p>
+			</div>
+			<div class="col-md-1"></div>
 		</div>
-	</ul>
-		<div class="col-med-2"></div>
-		<div class="col-med-2">
-	<ul>
-		<li> 1 TAZA DE JUGO DE LIMÓN RECIÉN EXPRIMIDO (200 ML) </li>
 
-		<li> 1 TAZA DE CLARAS DE HUEVO A TEMPERATURA AMBIENT </li>
+		<div class="row ingr-cont">
+			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				<img src="./Imagenes/limon.jpg" class="ingred" alt="limon">
+				<p class="ingText"> 1 Taza de jugo de limón recién exprimido (200 ml)</p>
+			</div>
 
-		<li> 2 TAZAS DE AZÚCAR GRANULADA </li>
-	</ul>
+			<div class="col-md-3">
+				<img src="./Imagenes/claras.jpg" class="ingred" alt="claras">
+				<p class="ingText">1 Taza de claras de huevo a temperatura ambiente</p>
+			</div>
+
+			<div class="col-md-3">
+				<img src="./Imagenes/granulada.jpg" class="ingred" alt="azucar granulada">
+				<p class="ingText">2 Tazas de azúcar granulada</p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
 		</div>
 	</div>
-	</div>
-	<hr>
+<!--********************************Preparación*********************************************-->
+	<div class="container-fluid Prep">
 
-	<div class="container-fluid section_recipe">
-
-		<h2 class="display-4 title-question title-prepare" id="title-recipe">Preparación</h2>
+		<h2 class="subtitulos">Preparación</h2>
 		
 		<div class="row">
 			<div class="col-md-2"></div>
@@ -125,7 +155,7 @@
 				<div id="accordion">
 
 					<div class="card">
-					    <div class="card-header brown-dark" id="headingOne">
+					    <div class="primeros" id="headingOne">
 					      <h5 class="mb-0">
 					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 					          Paso 1:
@@ -135,13 +165,13 @@
 
 					    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 					      <div class="card-body">
-					        En un bowl, junta la harina con el azúcar flor, añade la margarina y comienza a frotar con tus dedos hasta conseguir migas como arena. Agrega el huevo de una vez y trabaja con tus manos hasta obtener una masa compacta. Estira la masa sobre un molde para tarta de 26 a 28 cm de diámetro aproximado previamente enmantequillado y enharinado.
+					        En un bowl, junta la harina con el azúcar, añade la margarina y comienza a frotar con tus dedos hasta conseguir migas como arena. Agrega el huevo de una vez y trabaja con tus manos hasta obtener una masa compacta. Estira la masa sobre un molde para tarta de 26 a 28 cm de diámetro aproximado previamente enmantequillado y enharinado.
 					      </div>
 					    </div>
  	 				</div>
 
  	 				<div class="card">
-			    		<div class="card-header brown-light" id="headingTwo">
+			    		<div class="segundos" id="headingTwo">
 					      <h5 class="mb-0">
 					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 					          Paso 2:
@@ -150,13 +180,13 @@
 					    </div>
 					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 					      <div class="card-body">
-					        Pincha la masa con un tenedor en varias partes y lleva a horno precalentado a temperatura media-alta de 180°C durante 10 a 12 minutos y hasta cocer levemente. Mientras, junta en un bowl la leche condensada NESTLÉ® con el jugo de limón y remueve hasta homogeneizar. Vierte esta preparación sobre la masa pre-cocida y lleva nuevamente al horno. En este caso debes bajar un poco su temperatura y hornear durante 10 a 15 minutos aproximados hasta que el relleno tome textura compacta y la masa se termine de cocer.
+					        Pincha la masa con un tenedor en varias partes y lleva a horno precalentado a temperatura media-alta de 180°C durante 10 a 12 minutos y hasta cocer levemente. Mientras, junta en un bowl la leche condensada con el jugo de limón y remueve hasta homogeneizar. Vierte esta preparación sobre la masa pre-cocida y lleva nuevamente al horno. En este caso debes bajar un poco su temperatura y hornear durante 10 a 15 minutos aproximados hasta que el relleno tome textura compacta y la masa se termine de cocer.
 					      </div>
 					    </div>
 		  			</div>
 
 		  			<div class="card">
-					    <div class="card-header brown-dark" id="headingThree">
+					    <div class="primeros" id="headingThree">
 					      <h5 class="mb-0">
 					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 					          Paso 3:
@@ -165,75 +195,112 @@
 					    </div>
 					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 					      <div class="card-body">
-					        Aparte, junta en un bowl las claras de huevo con el azúcar granulada y llévalas a baño María suave, removiendo de vez en cuando, hasta disolver el azúcar completamente en las claras e integrar bien. Retira el bowl del baño maría y bate enérgicamente durante 8 a 10 minutos hasta triplicar su volumen y conseguir una preparación espumosa y satinada. Retira el pie del horno y cubre con el merengue recién preparado de manera decorativa. Deja enfriar y sirve cuando quieras.
+					        Aparte, junta en un bowl las claras de huevo con el azúcar granulada y llévalas a baño maría suave, removiendo de vez en cuando, hasta disolver el azúcar completamente en las claras e integrar bien. Retira el bowl del baño maría y bate enérgicamente durante 8 a 10 minutos hasta triplicar su volumen y conseguir una preparación espumosa y satinada. Retira el pie del horno y cubre con el merengue recién preparado de manera decorativa. Deja enfriar y sirve cuando quieras.
 					      </div>
 					    </div>
 		  			</div>
-	</div>
-	</div>
-	</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-
+<!--******************************************Recetas similares***************************************-->
 	<div class="container-fluid">
-	<h3>Ver otra receta similar</h3>
-	<div class="row" align="center">
-	<div class="col-med-2"></div>
-	<div class="col-med-2">
-	<a href="https://www.dulcereceta.cl/receta/kuchen-de-yoghurt-a-la-naranja/"> Receta kuchen de yoghurt a la naranja</a>
-	</div>
-	</div>
-	</div>
-	<div class="container-fluid">
-	<h3>¿Dónde comprar? - En Cali</h3>
-	<div class="row" align="center">
-	<div class="col-med-2"></div>
-	<div class="col-med-2">
-	<a href="https://www.dulcereceta.cl">Dulce Receta</a>
-	</div>
-	</div>
-	</div>
-	<hr>
-	<div class="container-fluid">
-	<h3>Conoce más recetas</h3>
-	<div class="row" align="center">
-	<div class="col-med-2"></div>
-	<div class="col-med-2">
-	<table>	
-	<thead>
-		<th>Nombre receta</th>
-		<th>Descripción</th>
-		<th>Ver más</th>
-	</thead>
-	<tbody>
-		<td><b>Tarta de chocolate y berries</b></td>
-		<td>Postre fácil en 30 min</td>
-		<td><a href="https://www.dulcereceta.cl/receta/mousse-de-chocolate-ideal/">Ver aquí</a>
-	</tbody>
-	<tbody>
-		<td><b>Mousse de chocolate</b></td>
-		<td>Postre dulce para hasta 15 unidades</td>
-		<td><a href="https://www.dulcereceta.cl/receta/tarta-de-chocolate-y-berries-sin-horno/">Ver aquí</a>
-	</tbody>
-	<tbody>
-		<td><b>Pannacota de mango</b></td>
-		<td>Fácil y rápido, esencial para fiestas</td>
-		<td><a href="https://www.dulcereceta.cl/receta/pannacota-de-mango/">Ver aquí</a>
-	</tbody>
-	<tfoot> 
+		<h2 class="subtitulos">Recetas similares</h2>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				<div class="element">
+					<img src="./Imagenes/pannacotta.jpg" alt="Pannacotta de mango" class="image rounded-circle">
+					<div class="overlay rounded-circle">
+				    <div class="text">
+				    	<h5>¿Quieres aprender a hacer pannacottas de mango?</h5>
+				    	<p>¡Aquí aprenderás a hacerlas!</p>
+				    </div>
+					</div>
+				</div>
+			</div>
 
-		<td></td>
-		<td><em><b>"Todos los postres son fáciles de realizar"</b></em></td>
+			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				
+				<div class="element">
+					<img src="./Imagenes/mousse.jpg" alt="Mousse de chocolate" class="image rounded-circle">
+					<div class="overlay rounded-circle">
+				    <div class="text">
+				    	<h5>¿Dónde comprar en Cali?</h5>
+				    	<p>¡Aquí te diremos!</p>
+				    </div>
+					</div>
+				</div>
 
-	</tfoot>
-	</table>
+			</div>
+		</div>
 	</div>
+
+<!--*****************************Más recetas*****************************************************************-->
+		<div class="container-fluid dudas">
+		<h2 class="subtitulos">Más recetas</h2>
+
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+
+		<div class="bd-example">
+  			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    	<ol class="carousel-indicators">
+      		<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+     		<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      		<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    	</ol>
+    <div class="carousel-inner">
+      	<div class="carousel-item active">
+        	<img src="./Imagenes/zanahoria.jpg" class="d-block w-100" alt="pie de zanahoria">
+        <div class="carousel-caption d-none d-md-block">
+          	<h5 class="subtitulos">Pie de zanahoria</h5>
+          	<p class="textos">Delicioso pie de zanahoria en menos de una hora.</p>
+        </div>
+      	</div>
+
+      	<div class="carousel-item">
+        	<img src="./Imagenes/platano.jpg" class="d-block w-100" alt="tarta de plátano">
+        <div class="carousel-caption d-none d-md-block">
+          	<h5 class="subtitulos">Tarta de plátano</h5>
+          	<p class="textos">Postre saludable. Especial para cenas familiares.</p>
+        </div>
+      	</div>
+
+      	<div class="carousel-item">
+        	<img src="./Imagenes/brownies.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          	<h5 class="subtitulos">Brownies con mantequilla de maní</h5>
+          	<p class="textos">Algo nuevo y rápido. Esencial para reuniones.</p>
+        </div>
+      	</div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  			</div>
+		</div>
+			</div>
+		</div>
+		</div>
+<!--************************************Pie de página**************************************-->
+	<div class="container-fluid pieSec">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 pieCont">
+				<p class="textPie">Todos los postres son fáciles de realizar / HCI</p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
 	</div>
-	</div>
-	<div>
-	<hr>
-	<h2>Conoce el resultado final de la receta del pie de limón</h2>
-	<img src="https://cdn.colombia.com/sdi/2012/09/10/pie-de-limon-532315.jpg">
-	</div>
+
 </body>
 </html>
