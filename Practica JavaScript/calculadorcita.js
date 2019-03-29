@@ -12,7 +12,13 @@ function getInt(){
 	a1 = toHex(rgb[1])
 	a2 = toHex(rgb[2])
 	ans = a0+a1+a2
+	ans = ans.toUpperCase()
+	
 
 	document.getElementById("enterColorCodeHexa").value = ans
-	document.getElementByClassName("changeColor").style
+	document.getElementById("colorcito").style.background = 'rgb(' + [rgb[0],rgb[1],rgb[2]].join(',') + ')';
+	document.getElementById("colorcito2").style.background = 'rgb(' + [rgb[0],rgb[1],rgb[2]].join(',') + ')';
+
+	
 }
+
