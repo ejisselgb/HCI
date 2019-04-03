@@ -1,62 +1,43 @@
-//alert("funciona")
+//prototype: copia de un objeto que ya esta declarado, se le asigna una caracteristica/comportamiento adicional pero no deja de ser el
+//mismo objeto
 
-function rgbtohex () {
-	var colorRGB = document.getElementById("enterColorCodeRGB").value;
-	var arregloRGB = colorRGB.split(",");
-	var arregloHexa = new Array;
+var netflixData = netflixData || {}; //nombre de espacio;objeto vacio
 
-
-	for(var i in arregloRGB){
-		var codec = (Number(arregloRGB[i]).toString(16))
-			if(codec.length < 2){
-				codec = "0" + codec;
-		}
-			arregloHexa.push(codec);
+netflixData.getInfo = { //objeto
+	namemovie: '',
+	yearmovie:'',
+	setnamemovie: function(name, year){
+		this.namemovie = name;
+		this.yearmovie = year;
 	}
-
-	return arregloHexa[0] + arregloHexa[1] + arregloHexa[2];
-
 }
 
-function hextorgb (){
-	var colorHexa = document.getElementById("enterColorCodeHexa").value;
-	//se separan de a dos numeros
-	var r = colorHexa.substring(0,2);
-    var g = colorHexa.substring(2,4);
-    var b = colorHexa.substring(4,6);
-    //se convierten a base 16
-	var r1 = parseInt(r,16);
-	var g1 = parseInt(g,16);
-	var b1 = parseInt(b,16);
-
-
-    return r1+ "," + g1 + "," + b1;
+function movie(name, year) { //objeto
+	this.name = name;
+	this.year = year;
 }
-//se agregó un id en la parte del botón "convertir" ya que no dejaba hacer .onclick con getElementsByClassName
-document.getElementById("cambiar").onclick = function () {change()};
 
-	function change(){
-		if(document.getElementById('enterColorCodeHexa').value != "" && document.getElementById('enterColorCodeRGB').value !=""){
-		alert("Solo debe llenar un campo.");
-			document.getElementById('enterColorCodeHexa').value = "";
-			document.getElementById('enterColorCodeRGB').value = "";
-		}
-		//de rgb a hexa
-		if(document.getElementById("enterColorCodeRGB").value != ""){
-			var toHexa = rgbtohex();
-			var changeColor = document.getElementsByClassName("changeColor");
-			for(var i = 0; i < changeColor.length; i++)(changeColor[i].style.background= "#" + toHexa);                                                                    
-			document.getElementById("enterColorCodeHexa").value = toHexa ;
-		}
-		else{
-			//de hexa a rgb
-			if(document.getElementById("enterColorCodeHexa").value != ""){
-				var toRGB = hextorgb();
-				var changeColor = document.getElementsByClassName("changeColor");
-				for(var i = 0; i < changeColor.length; i++)(changeColor[i].style.background= 'rgb('+ toRGB +')');
-				document.getElementById("enterColorCodeRGB").value = toRGB ;
-			}
-		}
-	}
+var movie1 = new movie('Titanic', '22')
+
+console.log(movie1.name);
+console.log(movie1.year);
+
+movie.prototype.showinfo = function(){
+	console.log(this.name + '' + this.year);
+}
 
 
+function serie (name, year){
+	this.name = name;
+	this.year = year;
+}
+serie.prototype = Object.create(movie.prototype)
+var serietest = new serie('Natalia','18')
+
+
+serietest.showinfo();
+//console.log(movie1.name);
+//console.log(movie1.year);
+//netflixData.getInfo.setnamemovie('Titanic','1');
+//console.log(netflixData.getInfo.namemovie);
+//console.log(netflixData.getInfo.yearmovie);
