@@ -1,45 +1,32 @@
-function mostrarRgb(){
-	var numbers = (document.getElementById("enterColorCodeRGB").value).split(",")
-	var line = ""
-	if(Number(numbers[0]) < 16){ line = "0"+ Number(numbers[0]).toString(16)}
-	else{line = Number(numbers[0]).toString(16)}
-	if(Number(numbers[1]) < 16){ line = line +"0"+ Number(numbers[1]).toString(16)}
-	else{line = line + Number(numbers[1]).toString(16)}
-	if(Number(numbers[2]) < 16){ line =line + "0"+ Number(numbers[2]).toString(16)}
-	else{line = line + Number(numbers[2]).toString(16)}
-	document.getElementById("enterColorCodeHexa").value = line
-	var objs = document.getElementsByClassName("changeColor")
-	var obj1 = objs[0]
-	var obj2 = objs[1]
-	obj1.style.backgroundColor="#"+line;
-	obj2.style.backgroundColor="#"+line;
+var netflixData = netflixData ||{};
 
+netflixData.getInfo = {
+	nameMovie: "",
+	yearMovie: "",
+	setter: function(name, year){
+		this.nameMovie = name;
+		this.yearMovie = year;
+	}
 }
 
-function mostrarHex(){
-	var numbers = document.getElementById("enterColorCodeHexa").value
-	var line = ""
-	var number1 = numbers.substring(0,2)
-	var number2 = numbers.substring(2,4)
-	var number3 = numbers.substring(4,6)
-	line = parseInt(number1, 16) +","+ parseInt(number2, 16)+","+ parseInt(number3, 16)
-	document.getElementById("enterColorCodeRGB").value = line
-	var objs = document.getElementsByClassName("changeColor")
-	var obj1 = objs[0]
-	var obj2 = objs[1]
-	obj1.style.backgroundColor="rgb("+line+")"
-	obj2.style.backgroundColor="rgb("+line+")"
-	
+function movie(name, year){
+	this.name = name;
+	this.year = year;
 }
-function mostrar(){
-	var numbersRGB = document.getElementById("enterColorCodeRGB").value
-	var numbersHex = document.getElementById("enterColorCodeHexa").value
-	if(numbersRGB === "" && numbersHex !== "" ){ mostrarHex()
-	}
-	else if(numbersRGB !== "" && numbersHex === "" ){mostrarRgb()
-	}
-	else if(numbersRGB !== "" && numbersHex !== "" ){alert("Borrar campo sin uso")
-	}
-	else{alert("campo vacio")
-	}
+
+function mostrar(){				
+var username = document.getElementById('etiqueta');
+var movie1 = new movie("ADAS", "12312")
+netflixData.getInfo.setter("bla", "2013")
+//username.value = netflixData.getInfo.nameMovie
+username.value = movie1.name;
 }
+
+movie.prototype.showInfo = function(){
+	console.log(this.name + " " + this.year)
+}
+
+var movie1 = new movie("ADAS", "12312")
+movie1.showInfo()
+
+
