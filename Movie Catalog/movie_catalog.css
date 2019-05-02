@@ -72,6 +72,6 @@
 }
 
 #plot_place {
-    margin-left: 280px; 
+    margin-left: 50%; 
     overflow: hidden; /* if you don't want #second to wrap below #first */
 }
