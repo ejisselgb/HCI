@@ -13,11 +13,11 @@ function showInfo(title, poster, plot, year, director, writer, genre){
 	if(title != undefined){
 		document.getElementById("movieTitle").innerHTML = title + " - " + year;
 		document.getElementById("moviePoster").src = poster;
-		document.getElementById("moviePlot").innerHTML = "Sinopsis: " + plot;
+		document.getElementById("moviePlot").innerHTML = "Plot: " + plot;
 		document.getElementById("director").innerHTML = "Director(s): " + director;
 		document.getElementById("writer").innerHTML = "Writer(s): " + writer;
 		document.getElementById("genre").innerHTML = "Genre: " + genre;
-		
+	
 	}
 }
 
@@ -28,15 +28,19 @@ function infoMovie(url, string){
 
 	request.onload = function(){
 		var data = JSON.parse(this.response)
-		console.log(data)
-		showInfo(data.Title, data.Poster, data.Plot, data.Year, data.Director, data.Writer, data.Genre)
+		if(data.Response == "False"){
+			document.getElementById("movieTitle").innerHTML = "Give a movie name";
+		}
+		else{
+			showInfo(data.Title, data.Poster, data.Plot, data.Year, data.Director, data.Writer, data.Genre)
+		}
 	};
 
 	request.send();
 
 }
 
-function getData(){ 
+function getData(){
 	var movie_name = document.getElementById("name").value;
 	infoMovie(api, "t="+movie_name);
 }
