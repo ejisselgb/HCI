@@ -1,39 +1,52 @@
 var apiurl = "http://www.omdbapi.com/?apikey=a532b6c1&";
 
-//let = local
+var clase = new connectionApi();
 
-// function infoMovie(url,string){
-// 	var request = new XMLHttpRequest();
-// 	request.open('GET', url + string, true);
-// 	request.onload = function(){
-// 		var data = JSON.parse(this.response);
-// 		console.log(data);
-// 	};
-// 	request.send();
+var Data = JSON.parse(data)
+console.log(data)
+
+// function getInfoMovie(url,string){
+// 	return new Promise(function(resolve,reject){
+// 		var request = new XMLHttpRequest();	
+// 		request.open('GET', url + string, true);
+// 		request.onload = function(){
+// 			var data = JSON.parse(this.response);
+// 			if(request.status == 200){
+// 				resolve(data)
+// 			}
+// 		}
+// 		request.send();
+// 	})
 // }
-// var string = "t=shrek"
-// infoMovie(url,string);
 
-function getInfoMovie(url,string){
-	return new Promise(function(resolve,reject){
-		var request = new XMLHttpRequest();	
-		request.open('GET', url + string, true);
-		request.onload = function(){
-			var data = JSON.parse(this.response);
-			if(request.status == 200){
-				resolve(data)
+var p
+function loadCatalog(value){
+	for(var i in Data[0].movies){
+		if(Data[0].movies[i].gender == value){
+			for(var k in Data[0].movies[i].movies){
+				console.log(Data[0].movies[i].movies[k].nameMovie)
+				p = clase.getInfoMovie(Data[0].movies[i].movies[k].nameMovie)
+				createDom()
 			}
 		}
-		request.send();
+	}
+}
+
+function createDom(){
+	p.then((resolve) =>{
+		console.log(resolve)
+		var image = document.createElement('img')
+		image.src = resolve.Poster
+		document.getElementById('elemento').appendChild(image)
 	})
 }
 
-function showInfo(url, string){
-	console.log("hole-----");
-	var p = getInfoMovie(url, string);
+function showInfo(string){
+	//console.log("hole-----");
+	var p = clase.getInfoMovie(string);
 	p.then((data)=>{
 		console.log(data);
-		document.getElementById('imagen').src = data.Poster
+		//document.getElementById('imagen').src = data.Poster
 	})
 }
 
