@@ -30,7 +30,7 @@ function getData(){
 	p.then((data)=>{
 		if(data.Response == "True"){
 			showInfo(data.Title + " - " + data.Year, data.Poster, "Plot: " + data.Plot, "Director(s): " + data.Director,
-			"Write(s): " + data.Writer, "Genre: " + data.Genre);
+			"Writer(s): " + data.Writer, "Genre: " + data.Genre);
 		}
 		else{
 			showInfo("Search for a movie", "", "", "", "", "")
@@ -41,6 +41,7 @@ function getData(){
 
 
 function loadCatalog(value){
+	console.log(value)
 	var a;
 	for(var i in loadData[0].movies){
 		if(value == loadData[0].movies[i].gender){
@@ -58,7 +59,6 @@ function loadCatalog(value){
 function createDom(p, value){
 
 	temp = value;
-
 	p.then((resolve)=>{
 		var image = document.createElement('img')
 		image.src = resolve.Poster
