@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MovieHunter</title>
+	<link rel="stylesheet" type="text/css" href="Movie.css">
+	<meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color: #2a2e37">
+
+	<div> <img src="C:\Users\mateo\Desktop\Universidad\Quinto Semestre\HCI\Tareas\Movie\log.png" id="logo"> </div>
+	<div class="cata">
+  		<button class="catalogo" value="comedy" data-toggle="modal" data-target="#exampleModal2" onclick="catalogo(this.value)"> Comedy</button>
+  		<button class="catalogo" value="romance" data-toggle="modal" data-target="#exampleModal2" onclick="catalogo(this.value)"> Romance</button>
+  		<button class="catalogo" value="scary" data-toggle="modal" data-target="#exampleModal2" onclick="catalogo(this.value)"> Scary</button>
+  		<button class="catalogo" value="animated" data-toggle="modal" data-target="#exampleModal2" onclick="catalogo(this.value)">Animated</button>
+  	</div>
+	<div class="search">
+  	<input type="search" class="search-box"  id="Buscador"	/>
+  	<span class="search-button">
+  		<span type="button" class="search-icon" data-toggle="modal" data-target="#exampleModal" onclick="Search()" >
+    	</span>
+  	</span>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title" id="exampleModalLabel">Error</h2>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<div><img id="imagen" style="margin-left: 24%; overflow:hidden;"></div>
+	      	<div id="sipnosis" style="width: 100%; overflow: hidden;">
+	      		<h4 id="sipno"></h4>
+	      		<h4 id="direc"></h4>
+	      		<h4 id="act"></h4>
+	      	</div>
+	        
+
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal 2-->
+	<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="exampleModal2">
+  		<div class="modal-dialog modal-xl">
+    		<div class="modal-content">
+      			<div id="elemento">
+					<h1 id="titulo2"></h1>
+				</div>
+    		</div>
+  		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="datamovies.json"></script>
+<script type="text/javascript" src="ClassApi.js"></script>
+<script language="JavaScript" type="text/javascript" src="Movie.js" ></script>
+</html>
