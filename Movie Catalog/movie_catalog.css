@@ -22,12 +22,14 @@
   min-width: 1024px;
   width: 100%;
   height: auto;
+  
   position: fixed;
   top: 0;
   left: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
 
 .mover { 
@@ -40,7 +42,6 @@
 .btn {
   margin-top: 10px;
   width: 20%;
- 
   background-color: #FF0000;
   color: white;
   font-size: 16px;

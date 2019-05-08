@@ -1,4 +1,5 @@
 var input = document.getElementById("name");
+let temp;
 if(input != null){
 	input.addEventListener("keyup", function(event) {
 	if (event.keyCode === 13) {
@@ -7,7 +8,9 @@ if(input != null){
 	}
 	});
 }
-var api = "http://www.omdbapi.com/?apikey=25a73872&"
+
+var connection = new ConnectionApi()
+var loadData = JSON.parse(data)
 
 function showInfo(title, poster, plot, director, writer, genre){
 	if(title != undefined){
@@ -21,21 +24,9 @@ function showInfo(title, poster, plot, director, writer, genre){
 	}
 }
 
-function infoMovie(url, string){
-	return new Promise(function(resolve, reject){
-		var request = new XMLHttpRequest();
-		request.open('GET', url + string, true);
-		request.onload = function(){
-			var data = JSON.parse(this.response)
-			resolve(data)
-		}
-		request.send();
-	});
-}
-
 function getData(){
 	var movie_name = document.getElementById("name").value;
-	var p = infoMovie(api, "t="+movie_name);
+	var p = connection.infoMovie("t="+movie_name);
 	p.then((data)=>{
 		if(data.Response == "True"){
 			showInfo(data.Title + " - " + data.Year, data.Poster, "Plot: " + data.Plot, "Director(s): " + data.Director,
@@ -46,4 +37,41 @@ function getData(){
 
 		}
 	});
+}
+
+
+function loadCatalog(value){
+	var a;
+	for(var i in loadData[0].movies){
+		if(value == loadData[0].movies[i].gender){
+			a = loadData[0].movies[i].movies
+		}
+	}
+	for(var i in a){
+		let p = connection.infoMovie("t=" + a[i].nameMovie);
+		createDom(p, value);
+ 	}
+
+ 	
+}
+
+function createDom(p, value){
+
+	temp = value;
+
+	p.then((resolve)=>{
+		var image = document.createElement('img')
+		image.src = resolve.Poster
+		document.getElementById('elemento').appendChild(image)
+		var title = document.createElement('h1')
+		title.innerHTML = resolve.Plot
+	})
+}
+
+function catalog(){
+	action = array("Avengers Endgame", "Avengers Age of ultron", "Avengers", "Avengers Infinity War", "X-men origins: Wolverine", "Deadpool")
+	horror = array("Nightmare on elm street", "Friday the 13th", "The conjuring", "Halloween", "Chucky", "The ring", "Annabelle")
+	fiction = array("The lord of the rings", "Star Wars", "Star Trek", "The hobbit", "Avatar")
+	anime = array("Akira", "grave of the fireflies", "My neighbour totoro", "Dragon Ball Super", "Spirited Away")
+
 }

@@ -29,7 +29,19 @@
 			<input id="name" class="inpt" placeholder="Find your movie..." required></input>
 			<button id="btn" type="button" data-toggle="modal" data-target="#myModal" onclick="return getData()" class="btn">Go!</button>
 		</div>
+	 <div>
+		<button value="comedy" onclick="loadCatalog(this.value)">Comedy</button>
+		<button value="romance" onclick="loadCatalog(this.value)">Romance</button>
+		<button value="scary" onclick="loadCatalog(this.value)">Scary</button>
+		<button value="animated" onclick="loadCatalog(this.value)">Animated</button>
 	</div>
+
+	<div id ="elemento">
+		
+	</div>
+	</div>
+
+ 
 
 
 	  <!-- Modal -->
@@ -52,8 +64,6 @@
 	          	<h4 id="genre"></h4>
 	          	<h4 id="director"></h4>
 	          	<h4 id="writer"></h4>
-
-
 	          </div>
           </div>
         </div>
@@ -65,8 +75,10 @@
     </div>
   </div>
 
-
+  	<script type="text/javascript" src="dataMovie.json"></script>
+	<script type="text/javascript" src="infoMovie.js"></script>
 	<script type="text/javascript" src="movie_catalog2.js"></script>
+
 
 </body>
 </html>
