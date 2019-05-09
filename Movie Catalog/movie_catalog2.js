@@ -39,12 +39,10 @@ function getData(){
 	});
 }
 
-
 function loadCatalog(value){
-	console.log(value)
 	var a;
 	for(var i in loadData[0].movies){
-		if(value == loadData[0].movies[i].gender){
+		if(value == loadData[0].movies[i].genre){
 			a = loadData[0].movies[i].movies
 		}
 	}
@@ -52,26 +50,27 @@ function loadCatalog(value){
 		let p = connection.infoMovie("t=" + a[i].nameMovie);
 		createDom(p, value);
  	}
-
- 	
+ 	var nodeParent = document.getElementById("elemento");
+		while (nodeParent.firstChild){
+    	nodeParent.removeChild(nodeParent.firstChild);
+	}
 }
 
 function createDom(p, value){
-
 	temp = value;
 	p.then((resolve)=>{
-		var image = document.createElement('img')
-		image.src = resolve.Poster
-		document.getElementById('elemento').appendChild(image)
-		var title = document.createElement('h1')
-		title.innerHTML = resolve.Plot
+		var nodeParent = document.getElementById('elemento');
+		var image = document.createElement('img');
+		image.setAttribute("src", resolve.Poster);
+		nodeParent.appendChild(image)
+
 	})
 }
 
 function catalog(){
-	action = array("Avengers Endgame", "Avengers Age of ultron", "Avengers", "Avengers Infinity War", "X-men origins: Wolverine", "Deadpool")
-	horror = array("Nightmare on elm street", "Friday the 13th", "The conjuring", "Halloween", "Chucky", "The ring", "Annabelle")
-	fiction = array("The lord of the rings", "Star Wars", "Star Trek", "The hobbit", "Avatar")
-	anime = array("Akira", "grave of the fireflies", "My neighbour totoro", "Dragon Ball Super", "Spirited Away")
-
+	var action = ["Avengers Endgame", "Avengers Age of ultron", "Avengers", "Avengers Infinity War", "X-men origins: Wolverine", "Deadpool"]
+	var horror = ["Nightmare on elm street", "Friday the 13th", "The conjuring", "Halloween", "Chucky", "The ring", "Annabelle"]
+	var fiction = ["The lord of the rings", "Star Wars", "Star Trek", "The hobbit", "Avatar"]
+	var anime = ["Akira", "grave of the fireflies", "My neighbour totoro", "Dragon Ball Super", "Spirited Away"]
 }
+catalog()

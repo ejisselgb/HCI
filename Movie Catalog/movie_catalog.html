@@ -22,19 +22,19 @@
 
 		  <!-- Overlay content -->
 		  <div class="overlay-content">
-		  	<ul>
-				<li><button value="comedy" onclick="loadCatalog(this.value)">Comedy</button></li>
+		  	<ul style="list-style: none">
+				<li><button style="font-size: 20px;" class="btn_nav" value="comedy" onclick="loadCatalog(this.value)">Comedy</button></li>
 				<br>
-				<li><button value="romance" onclick="loadCatalog(this.value)">Romance</button></li>
+				<li><button style="font-size: 20px;" class="btn_nav" value="romance" onclick="loadCatalog(this.value)">Romance</button></li>
 				<br>
-				<li><button value="scary" onclick="loadCatalog(this.value)">Horror</button></li>
+				<li><button style="font-size: 20px;" class="btn_nav" value="scary" onclick="loadCatalog(this.value)">Horror</button></li>
 				<br>
-				<li><button value="animated" onclick="loadCatalog(this.value)">Animated</button></li>
+				<li><button style="font-size: 20px;" class="btn_nav" value="animated" onclick="loadCatalog(this.value)">Animated</button></li>
 		  	</ul>
 		  </div>
-		<div id ="elemento">
-		</div>
 
+		<div id ="elemento" >
+		</div>
 		</div>
 
 		<!-- Use any element to open/show the overlay navigation menu -->
@@ -45,7 +45,7 @@
 				<img src="logo.png">
 			</div>
 			<div id="categories_menu">
-				<h2><a onclick="openNav()" style="color: white; font-family: Roboto;">Categories</a></h2>
+				<h3><a onclick="openNav()" style="color: white; font-family: Roboto;">Categories</a></h3>
 			</div>
 		</div>
 		<!-- Search bar -->
@@ -67,7 +67,7 @@
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div id="modalContent"class="modal-content">
+      <div id="modalContent" class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 id="movieTitle" class="modal-title">Sorry, Not Found :(</h4>

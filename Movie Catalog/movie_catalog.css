@@ -21,8 +21,9 @@
 }
 #categories_menu {
     overflow: hidden; /* if you don't want #second to wrap below #first */
-    cursor: pointer; 
-    margin-left: 85%; 
+    cursor: pointer;
+    margin-left: 85%;
+    margin-top: 20px;
 }
 
 #header {
@@ -31,7 +32,6 @@
   min-width: 1024px;
   width: 100%;
   height: auto;
-  
   position: fixed;
   top: 0;
   left: 0;
@@ -94,15 +94,15 @@
   z-index: 1; /* Sit on top */
   right: 0;
   top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  background-color: rgb(0,0,0, 0.95); /* Black fallback color */
+
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
+  position: absolute;
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
@@ -115,21 +115,36 @@
   text-decoration: none;
   font-size: 36px;
   color: #818181;
-  display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
+  display: block; /* Display block instead of inline */
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: red;
+}
+
+.overlay button:hover, .overlay button:focus {
+  color: red;
+  text-decoration:underline;
+}
+
+.btn_nav{
+  display: block;
+  background:none!important;
+  color: #818181;
+  border:none; 
+  padding:0!important;
+  font: inherit;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
   right: 45px;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -141,3 +156,13 @@
     right: 35px;
   }
 }
+
+#myNav {
+    float:left; 
+}
+
+#elemento {
+    margin-left: 20%; 
+    overflow: hidden;
+}
+
