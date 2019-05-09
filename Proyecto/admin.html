@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<title>APP WEB</title>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+	    <img src="http://devel.olsoftware.com:8081/olsoftware_autonomina/resources/images/header/alamano.png?pfdrid_c=true" width="20%" height="20%" class="d-inline-block align-top" alt="">
+	  </a>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	    </ul>
+	    <a href="index.html" class="btn btn-outline-danger " role="button">Cerrar Sesion</a>
+	  </div>
+	</nav>
+
+</head>
+<body>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col"></br></br></div>
+	    <div class="col"></br></br></div>
+	    <div class="col"></br></br></div>
+	    <div class="w-100"></div>
+	    <div class="col"></br></br></div>
+	    <div class="col"></br></br></div>
+	    <div class="col"></br></br></div>
+	    <div class="w-100"></div>
+	    <div class="col"></div>
+	    <div class="col-12">
+	    	<div class="accordion" id="accordionExample">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+			          Historial de Solicutudes
+			        </button>
+			      </h2>
+			    </div>
+
+			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+			      <div class="card-body">
+			      	<form>
+			      		<div class="form-group">
+			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
+								<div class="col-10">
+							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
+								</div>
+						</div>
+						<div class="form-group">
+					        <table class="table">
+							  <thead class="thead-dark">
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">First</th>
+							      <th scope="col">Last</th>
+							      <th scope="col">Handle</th>
+							      <th scope="col">Accion</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+								    <th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+								    <td>
+								    	<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
+					</form>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+			          Administrar Empresas
+			        </button>
+			      </h2>
+			    </div>
+
+			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+			      <div class="card-body">
+			      	<form>
+			      		<div class="form-group">
+			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
+								<div class="col-10">
+							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
+								</div>
+						</div>
+						<div class="form-group">
+					        <table class="table">
+							  <thead class="thead-dark">
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">First</th>
+							      <th scope="col">Last</th>
+							      <th scope="col">Handle</th>
+							      <th scope="col">Accion</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+								    <th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+								    <td>
+								    	<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
+					</form>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingTwo">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Administracion de Usuarios
+			        </button>
+			      </h2>
+			    </div>
+			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+			      <div class="card-body">
+			        <form>
+			      		<div class="form-group">
+			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
+								<div class="col-10">
+							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
+								</div>
+						</div>
+						<div class="form-group">
+					        <table class="table">
+							  <thead class="thead-dark">
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">First</th>
+							      <th scope="col">Last</th>
+							      <th scope="col">Handle</th>
+							      <th scope="col">Accion</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+								    <th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+								    <td>
+								    	<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
+					</form>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Administrar Certificados
+			        </button>
+			      </h2>
+			    </div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+			      <div class="card-body">
+			        <form>
+			      		<div class="form-group">
+			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
+								<div class="col-10">
+							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
+								</div>
+						</div>
+						<div class="form-group">
+					        <table class="table">
+							  <thead class="thead-dark">
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">First</th>
+							      <th scope="col">Last</th>
+							      <th scope="col">Handle</th>
+							      <th scope="col">Accion</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+								    <th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+								    <td>
+								    	<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
+					</form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	    </div>
+	    <div class="col"></div>
+	  </div>
+	</div>
+
+</body>
+</html>
