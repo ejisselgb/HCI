@@ -4,6 +4,8 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -24,549 +26,504 @@
 
 </head>
 <body>
-
+	
 	<div class="container">
-	  <div class="row">
-	    <div class="col"></br></br></div>
-	    <div class="col"></br></br></div>
-	    <div class="col"></br></br></div>
-	    <div class="w-100"></div>
-	    <div class="col"></br></br></div>
-	    <div class="col"></br></br></div>
-	    <div class="col"></br></br></div>
-	    <div class="w-100"></div>
-	    <div class="col"></div>
-	    <div class="col-12">
-	    	<div class="accordion" id="accordionExample">
-			  <div class="card">
-			    <div class="card-header" id="headingOne">
-			      <h2 class="mb-0">
-			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			          Historial de Solicutudes
-			        </button>
-			      </h2>
-			    </div>
+		<div class="row">
+			<div class="col"></br></br></div>
+			<div class="col"></br></br></div>
+			<div class="col"></br></br></div>
+			<div class="w-100"></div>
+			<div class="col"></br></br></div>
+			<div class="col"></br></br></div>
+			<div class="col"></br></br></div>
+			<div class="w-100"></div>
+			<div class="col"></div>
+			<div class="col-12">
+				<ul class="nav nav-tabs nav-justified" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active border" data-toggle="tab" href="#tabHistorialSolicitudes">Historial de Solicutudes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link border" data-toggle="tab" href="#tabAdminBussi">Administrar Empresas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link border" data-toggle="tab" href="#tabAdminUser">Administracion de Usuarios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link border" data-toggle="tab" href="#tabAdminCerti">Administrar Certificados</a>
+					</li>
+				</ul>
 
-			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-			      <div class="card-body">
-			      	<form>
-			      		<div class="form-group">
-			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
-								<div class="col-10">
-							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
-								</div>
-						</div>
-						<div class="form-group">
-					        <table class="table">
-							  <thead class="thead-dark">
-							    <tr>
-							      <th scope="col">#</th>
-							      <th scope="col">First</th>
-							      <th scope="col">Last</th>
-							      <th scope="col">Handle</th>
-							      <th scope="col">Accion</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-								    <th scope="row">1</th>
-								    <td>Mark</td>
-								    <td>Otto</td>
-								    <td>@mdo</td>
-								    <td>
-								    	<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">2</th>
-							      	<td>Jacob</td>
-							      	<td>Thornton</td>
-							      	<td>@fat</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">3</th>
-							      	<td>Larry</td>
-							      	<td>the Bird</td>
-							      	<td>@twitter</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							  </tbody>
-							</table>
-						</div>
-					</form>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header" id="headingFour">
-			      <h2 class="mb-0">
-			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			          Administrar Empresas
-			        </button>
-			      </h2>
-			    </div>
+				<div class="tab-content">
 
-			    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-			      <div class="card-body">
-			      	<form>
-			      		<div class="form-group">
-			      			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewEmpresa">
-								Nueva Empresa
-							</button>
-						</div>
-						<div class="form-group">
-					        <table class="table">
-							  <thead class="thead-dark">
-							    <tr>
-							      <th scope="col">#</th>
-							      <th scope="col">First</th>
-							      <th scope="col">Last</th>
-							      <th scope="col">Handle</th>
-							      <th scope="col">Accion</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-								    <th scope="row">1</th>
-								    <td>Mark</td>
-								    <td>Otto</td>
-								    <td>@mdo</td>
-								    <td>
-								    	<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">2</th>
-							      	<td>Jacob</td>
-							      	<td>Thornton</td>
-							      	<td>@fat</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">3</th>
-							      	<td>Larry</td>
-							      	<td>the Bird</td>
-							      	<td>@twitter</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							  </tbody>
-							</table>
-						</div>
-					</form>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header" id="headingTwo">
-			      <h2 class="mb-0">
-			        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          Administracion de Usuarios
-			        </button>
-			      </h2>
-			    </div>
-			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-			      <div class="card-body">
-			        <form>
-			      		<div class="form-group">
-			      			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalLong">
-								Nueva Usuario
-							</button>
-							<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewUser">
-								Administrar Roles
-							</button>
-						</div>
-						<div class="form-group">
-					        <table class="table">
-							  <thead class="thead-dark">
-							    <tr>
-							      <th scope="col">Cedula</th>
-							      <th scope="col">Nombre</th>
-							      <th scope="col">Correo</th>
-							      <th scope="col">Salario</th>
-							      <th scope="col">Accion</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-								    <th scope="row">1</th>
-								    <td>Mark</td>
-								    <td>Otto@gmail.com</td>
-								    <td>$500000</td>
-								    <td>
-								    	<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">2</th>
-							      	<td>Jacob</td>
-							      	<td>Thornton@gmail.com</td>
-							      	<td>$500000</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">3</th>
-							      	<td>Larry</td>
-							      	<td>the Bird</td>
-							      	<td>@twitter</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							  </tbody>
-							</table>
-						</div>
-					</form>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header" id="headingThree">
-			      <h2 class="mb-0">
-			        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          Administrar Certificados
-			        </button>
-			      </h2>
-			    </div>
-			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-			      <div class="card-body">
-			        <form>
-			      		<div class="form-group">
-			      			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewUser">
-								Nuevo Certificado
-							</button>
-						</div>
-						<div class="form-group">
-					        <table class="table">
-							  <thead class="thead-dark">
-							    <tr>
-							      <th scope="col">#</th>
-							      <th scope="col">Nombre</th>
-							      <th scope="col">Estado</th>
-							      <th scope="col">Accion</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-								    <th scope="row">1</th>
-								    <td>Certificado Laboral</td>
-								    <td>Activo</td>
-								    <td>
-								    	<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">2</th>
-							      	<td>Comprobante de Pago</td>
-							      	<td>Activo</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">3</th>
-							      	<td>Ingresos y Retenciones</td>
-							      	<td>Activo</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							    <tr>
-							      	<th scope="row">4</th>
-							      	<td>Certificado Embajadas</td>
-							      	<td>Activo</td>
-							      	<td>
-							      		<div class="dropdown">
-										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    	Accion
-										  	</button>
-										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    	<a class="dropdown-item" href="#">Detalle</a>
-										    	<a class="dropdown-item" href="#">Eliminar</a>
-										  	</div>
-										</div>
-									</td>
-							    </tr>
-							  </tbody>
-							</table>
-						</div>
-					</form>
-			      </div>
-			    </div>
-			  </div>
+					<div id="tabHistorialSolicitudes" class="container tab-pane active border"><br>
+						<form>
+							<div class="form-group">
+								<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
+									<div class="col-10">
+										<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
+									</div>
+							</div>
+							<div class="form-group">
+								<table class="table table-bordered">
+									<thead class="thead-dark">
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">First</th>
+											<th scope="col">Last</th>
+											<th scope="col">Handle</th>
+											<th scope="col">Accion</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td class="align-middle">Mark</td>
+											<td class="align-middle">Otto</td>
+											<td class="align-middle">@mdo</td>
+											<td>
+												<button type="button" class="btn btn-sm btn-primary"><i class="far fa-eye"></i></button>
+												<button type="button" class="btn btn-sm btn-success"><i class="far fa-edit"></i></button>
+												<button type="button" class="btn btn-sm btn-danger"><i class="far fa-trash-alt"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td class="align-middle">Jacob</td>
+											<td class="align-middle">Thornton</td>
+											<td class="align-middle">@fat</td>
+											<td>
+												<button type="button" class="btn btn-sm btn-primary"><i class="far fa-eye"></i></button>
+												<button type="button" class="btn btn-sm btn-success"><i class="far fa-edit"></i></button>
+												<button type="button" class="btn btn-sm btn-danger"><i class="far fa-trash-alt"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td class="align-middle">Larry</td>
+											<td class="align-middle">the Bird</td>
+											<td class="align-middle">@twitter</td>
+											<td class="align-middle">
+												<button type="button" class="btn btn-sm btn-primary"><i class="far fa-eye"></i></button>
+												<button type="button" class="btn btn-sm btn-success"><i class="far fa-edit"></i></button>
+												<button type="button" class="btn btn-sm btn-danger"><i class="far fa-trash-alt"></i></button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					</div>
+
+					<div id="tabAdminBussi" class="container tab-pane fade border"><br>
+						<form>
+							<div class="form-group">
+								<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewEmpresa">
+									Nueva Empresa
+								</button>
+							</div>
+							<div class="form-group">
+								<table class="table table-bordered">
+									<thead class="thead-dark">
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">First</th>
+											<th scope="col">Last</th>
+											<th scope="col">Handle</th>
+											<th scope="col">Accion</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Jacob</td>
+											<td>Thornton</td>
+											<td>@fat</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Larry</td>
+											<td>the Bird</td>
+											<td>@twitter</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					</div>
+
+					<div id="tabAdminUser" class="container tab-pane fade border"><br>
+						<form>
+							<div class="form-group">
+								<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalLong">
+									Nueva Usuario
+								</button>
+								<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewUser">
+									Administrar Roles
+								</button>
+							</div>
+							<div class="form-group">
+								<table class="table table-bordered">
+									<thead class="thead-dark">
+										<tr>
+											<th scope="col">Cedula</th>
+											<th scope="col">Nombre</th>
+											<th scope="col">Correo</th>
+											<th scope="col">Salario</th>
+											<th scope="col">Accion</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Mark</td>
+											<td>Otto@gmail.com</td>
+											<td>$500000</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Jacob</td>
+											<td>Thornton@gmail.com</td>
+											<td>$500000</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Larry</td>
+											<td>the Bird</td>
+											<td>@twitter</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					</div>
+
+					<div id="tabAdminCerti" class="container tab-pane fade border"><br>
+						<form>
+							<div class="form-group">
+								<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewUser">
+									Nuevo Certificado
+								</button>
+							</div>
+							<div class="form-group">
+								<table class="table table-bordered">
+									<thead class="thead-dark">
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Nombre</th>
+											<th scope="col">Estado</th>
+											<th scope="col">Accion</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Certificado Laboral</td>
+											<td>Activo</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Comprobante de Pago</td>
+											<td>Activo</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Ingresos y Retenciones</td>
+											<td>Activo</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">4</th>
+											<td>Certificado Embajadas</td>
+											<td>Activo</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Accion
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Detalle</a>
+														<a class="dropdown-item" href="#">Eliminar</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
-	    </div>
-	    <div class="col"></div>
-	  </div>
+			<div class="col"></div>
+		</div>
 	</div>
 
 	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLongTitle">Nuevo Usuario</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	      	<form>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <label for="inputEmail4">Nombre</label>
-			      <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
-			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputPassword4">Cedula</label>
-			      <input type="text" class="form-control" id="inputPassword4" placeholder="Cedula">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <label for="inputAddress">Fecha Ingreso</label>
-			    <input type="text" class="form-control" id="inputAddress" placeholder="30/04/2019">
-			  </div>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			    	<label for="inputAddress2">Fecha Expedicion</label>
-			    	<input type="text" class="form-control" id="inputAddress2" placeholder="10/11/2018">
-			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputPassword4">Lugar Expedicion</label>
-			      <input type="text" class="form-control" id="inputPassword4" placeholder="Santiago de Cali">
-			    </div>
-			  </div>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			    	<label for="inputAddress2">Fecha Ingreso</label>
-			    	<input type="text" class="form-control" id="inputAddress2" placeholder="10/11/2018">
-			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputPassword4">Fecha Retiro</label>
-			      <input type="text" class="form-control" id="inputPassword4" placeholder="30/04/2019">
-			    </div>
-			  </div>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <label for="inputCity">Cargo</label>
-			      <input type="text" class="form-control" id="inputCity">
-			    </div>
-			    <div class="form-group col-md-4">
-			      <label for="inputState">Tipo Contrato</label>
-			      <select id="inputState" class="form-control">
-			        <option selected>Choose...</option>
-			        <option>...</option>
-			      </select>
-			    </div>
-			  </div>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			    	<label for="inputAddress2">Salario Basico</label>
-			    	<input type="text" class="form-control" id="inputAddress2" placeholder="$500000">
-			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputPassword4">Salario Variable</label>
-			      <input type="text" class="form-control" id="inputPassword4" placeholder="$1500000">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="form-check">
-			      <input class="form-check-input" type="checkbox" id="gridCheck">
-			      <label class="form-check-label" for="gridCheck">
-			        Estado
-			      </label>
-			    </div>
-			  </div>
-			</form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-	        <button type="button" class="btn btn-primary">Guardar</button>
-	      </div>
-	    </div>
-	  </div>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Nuevo Usuario</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputEmail4">Nombre</label>
+								<input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Cedula</label>
+								<input type="text" class="form-control" id="inputPassword4" placeholder="Cedula">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputAddress">Fecha Ingreso</label>
+							<input type="text" class="form-control" id="inputAddress" placeholder="30/04/2019">
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputAddress2">Fecha Expedicion</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="10/11/2018">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Lugar Expedicion</label>
+								<input type="text" class="form-control" id="inputPassword4" placeholder="Santiago de Cali">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputAddress2">Fecha Ingreso</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="10/11/2018">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Fecha Retiro</label>
+								<input type="text" class="form-control" id="inputPassword4" placeholder="30/04/2019">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputCity">Cargo</label>
+								<input type="text" class="form-control" id="inputCity">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputState">Tipo Contrato</label>
+								<select id="inputState" class="form-control">
+									<option selected>Choose...</option>
+									<option>...</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputAddress2">Salario Basico</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="$500000">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Salario Variable</label>
+								<input type="text" class="form-control" id="inputPassword4" placeholder="$1500000">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">
+									Estado
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="modal fade" id="interfaceNewEmpresa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLongTitle">Nueva Empresa</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <form>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <label for="inputEmail4">NIT</label>
-			      <input type="email" class="form-control" id="inputEmail4" placeholder="NIT">
-			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputPassword4">Nombre</label>
-			      <input type="text" class="form-control" id="inputPassword4" placeholder="Nombre">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <label for="inputAddress">Dirreccion</label>
-			    <input type="text" class="form-control" id="inputAddress" placeholder="Dirreccion">
-			  </div>
-			  <div class="form-group">
-			    <label for="inputAddress2">Telefono</label>
-			    <input type="text" class="form-control" id="inputAddress2" placeholder="Telefono">
-			  </div>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <label for="inputEmail4">Responsable</label>
-			      <input type="email" class="form-control" id="inputEmail4" placeholder="Responsable">
-			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputPassword4">Cargo</label>
-			      <input type="text" class="form-control" id="inputPassword4" placeholder="Cargo">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="form-check">
-			      <input class="form-check-input" type="checkbox" id="gridCheck">
-			      <label class="form-check-label" for="gridCheck">
-			        Activa
-			      </label>
-			    </div>
-			  </div>
-			</form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-	        <button type="button" class="btn btn-primary">Guardar</button>
-	      </div>
-	    </div>
-	  </div>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Nueva Empresa</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputEmail4">NIT</label>
+								<input type="email" class="form-control" id="inputEmail4" placeholder="NIT">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Nombre</label>
+								<input type="text" class="form-control" id="inputPassword4" placeholder="Nombre">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputAddress">Dirreccion</label>
+							<input type="text" class="form-control" id="inputAddress" placeholder="Dirreccion">
+						</div>
+						<div class="form-group">
+							<label for="inputAddress2">Telefono</label>
+							<input type="text" class="form-control" id="inputAddress2" placeholder="Telefono">
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputEmail4">Responsable</label>
+								<input type="email" class="form-control" id="inputEmail4" placeholder="Responsable">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Cargo</label>
+								<input type="text" class="form-control" id="inputPassword4" placeholder="Cargo">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">
+									Activa
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="modal fade" id="interfaceNewUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLongTitle">Pendiente</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        Pendiente
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-	        <button type="button" class="btn btn-primary">Guardar</button>
-	      </div>
-	    </div>
-	  </div>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Pendiente</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Pendiente
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>
