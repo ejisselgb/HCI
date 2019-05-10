@@ -127,22 +127,21 @@
 			    </div>
 			  </div>
 			  <div class="card">
-			    <div class="card-header" id="headingOne">
+			    <div class="card-header" id="headingFour">
 			      <h2 class="mb-0">
-			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 			          Administrar Empresas
 			        </button>
 			      </h2>
 			    </div>
 
-			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+			    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
 			      <div class="card-body">
 			      	<form>
 			      		<div class="form-group">
-			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
-								<div class="col-10">
-							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
-								</div>
+			      			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewEmpresa">
+								Nueva Empresa
+							</button>
 						</div>
 						<div class="form-group">
 					        <table class="table">
@@ -226,19 +225,21 @@
 			      <div class="card-body">
 			        <form>
 			      		<div class="form-group">
-			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
-								<div class="col-10">
-							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
-								</div>
+			      			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalLong">
+								Nueva Usuario
+							</button>
+							<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewUser">
+								Administrar Roles
+							</button>
 						</div>
 						<div class="form-group">
 					        <table class="table">
 							  <thead class="thead-dark">
 							    <tr>
-							      <th scope="col">#</th>
-							      <th scope="col">First</th>
-							      <th scope="col">Last</th>
-							      <th scope="col">Handle</th>
+							      <th scope="col">Cedula</th>
+							      <th scope="col">Nombre</th>
+							      <th scope="col">Correo</th>
+							      <th scope="col">Salario</th>
 							      <th scope="col">Accion</th>
 							    </tr>
 							  </thead>
@@ -246,8 +247,8 @@
 							    <tr>
 								    <th scope="row">1</th>
 								    <td>Mark</td>
-								    <td>Otto</td>
-								    <td>@mdo</td>
+								    <td>Otto@gmail.com</td>
+								    <td>$500000</td>
 								    <td>
 								    	<div class="dropdown">
 										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -263,8 +264,8 @@
 							    <tr>
 							      	<th scope="row">2</th>
 							      	<td>Jacob</td>
-							      	<td>Thornton</td>
-							      	<td>@fat</td>
+							      	<td>Thornton@gmail.com</td>
+							      	<td>$500000</td>
 							      	<td>
 							      		<div class="dropdown">
 										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -313,28 +314,25 @@
 			      <div class="card-body">
 			        <form>
 			      		<div class="form-group">
-			      			<label for="example-date-input" class="col-2 col-form-label">Fecha</label>
-								<div class="col-10">
-							    	<input class="form-control" type="date" value="2019-04-31" id="example-date-input">
-								</div>
+			      			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#interfaceNewUser">
+								Nuevo Certificado
+							</button>
 						</div>
 						<div class="form-group">
 					        <table class="table">
 							  <thead class="thead-dark">
 							    <tr>
 							      <th scope="col">#</th>
-							      <th scope="col">First</th>
-							      <th scope="col">Last</th>
-							      <th scope="col">Handle</th>
+							      <th scope="col">Nombre</th>
+							      <th scope="col">Estado</th>
 							      <th scope="col">Accion</th>
 							    </tr>
 							  </thead>
 							  <tbody>
 							    <tr>
 								    <th scope="row">1</th>
-								    <td>Mark</td>
-								    <td>Otto</td>
-								    <td>@mdo</td>
+								    <td>Certificado Laboral</td>
+								    <td>Activo</td>
 								    <td>
 								    	<div class="dropdown">
 										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -349,9 +347,8 @@
 							    </tr>
 							    <tr>
 							      	<th scope="row">2</th>
-							      	<td>Jacob</td>
-							      	<td>Thornton</td>
-							      	<td>@fat</td>
+							      	<td>Comprobante de Pago</td>
+							      	<td>Activo</td>
 							      	<td>
 							      		<div class="dropdown">
 										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -366,9 +363,24 @@
 							    </tr>
 							    <tr>
 							      	<th scope="row">3</th>
-							      	<td>Larry</td>
-							      	<td>the Bird</td>
-							      	<td>@twitter</td>
+							      	<td>Ingresos y Retenciones</td>
+							      	<td>Activo</td>
+							      	<td>
+							      		<div class="dropdown">
+										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    	Accion
+										  	</button>
+										  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    	<a class="dropdown-item" href="#">Detalle</a>
+										    	<a class="dropdown-item" href="#">Eliminar</a>
+										  	</div>
+										</div>
+									</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">4</th>
+							      	<td>Certificado Embajadas</td>
+							      	<td>Activo</td>
 							      	<td>
 							      		<div class="dropdown">
 										  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -391,6 +403,169 @@
 			</div>
 	    </div>
 	    <div class="col"></div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Nuevo Usuario</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<form>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Nombre</label>
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Cedula</label>
+			      <input type="text" class="form-control" id="inputPassword4" placeholder="Cedula">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Fecha Ingreso</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="30/04/2019">
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			    	<label for="inputAddress2">Fecha Expedicion</label>
+			    	<input type="text" class="form-control" id="inputAddress2" placeholder="10/11/2018">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Lugar Expedicion</label>
+			      <input type="text" class="form-control" id="inputPassword4" placeholder="Santiago de Cali">
+			    </div>
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			    	<label for="inputAddress2">Fecha Ingreso</label>
+			    	<input type="text" class="form-control" id="inputAddress2" placeholder="10/11/2018">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Fecha Retiro</label>
+			      <input type="text" class="form-control" id="inputPassword4" placeholder="30/04/2019">
+			    </div>
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputCity">Cargo</label>
+			      <input type="text" class="form-control" id="inputCity">
+			    </div>
+			    <div class="form-group col-md-4">
+			      <label for="inputState">Tipo Contrato</label>
+			      <select id="inputState" class="form-control">
+			        <option selected>Choose...</option>
+			        <option>...</option>
+			      </select>
+			    </div>
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			    	<label for="inputAddress2">Salario Basico</label>
+			    	<input type="text" class="form-control" id="inputAddress2" placeholder="$500000">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Salario Variable</label>
+			      <input type="text" class="form-control" id="inputPassword4" placeholder="$1500000">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        Estado
+			      </label>
+			    </div>
+			  </div>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Guardar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="interfaceNewEmpresa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Nueva Empresa</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">NIT</label>
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="NIT">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Nombre</label>
+			      <input type="text" class="form-control" id="inputPassword4" placeholder="Nombre">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Dirreccion</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="Dirreccion">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress2">Telefono</label>
+			    <input type="text" class="form-control" id="inputAddress2" placeholder="Telefono">
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Responsable</label>
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="Responsable">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Cargo</label>
+			      <input type="text" class="form-control" id="inputPassword4" placeholder="Cargo">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        Activa
+			      </label>
+			    </div>
+			  </div>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Guardar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="interfaceNewUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Pendiente</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        Pendiente
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Guardar</button>
+	      </div>
+	    </div>
 	  </div>
 	</div>
 
