@@ -8,7 +8,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<title></title>
-	<script type="text/javascript" src="api.js"></script>
+	
 </head>
 <body >
 
@@ -27,8 +27,17 @@
 			<img id="img1" src ="https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" >
 			</td>
 			</tr>
+			<tr>
+			<td> <input type="button" value="comedy" class="myButton" onclick = "loadCatalog(this.value)" > </td>
+			<td> <input type="button" value="scary" class="myButton" onclick = "loadCatalog(this.value)" > </td>
+			<td> <input type="button" value="animated" class="myButton" onclick = "loadCatalog(this.value)" > </td>
+			<td> <input type="button" value="romance" class="myButton" onclick = "loadCatalog(this.value)" > </td>
+			</tr>
+
 
 		</table>
+	
+	<div id="elemento"></div>
 	</div>
 
 	</form>
@@ -36,5 +45,8 @@
 <p id="titleMovie"></p>
 <img src="">
 <p id="titleMovie"></p>
+<script type="text/javascript" src="infoMovie.js"></script>
+	<script type="text/javascript" src="data.json"></script>
+	<script type="text/javascript" src="api.js"></script>
 </body>
 </html>
