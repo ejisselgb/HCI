@@ -14,7 +14,6 @@ class Handler {
 
     let req = new XMLHttpRequest();
     let tmpUrl = ref.apiUrl + '?' + ref.apiKey + _params;
-    console.log(ref.apiUrl + '?' + ref.apiKey + _params);
     req.open(_reqType, tmpUrl, true);
     req.responseType = _responseType;
     req.onload = function () {
@@ -31,15 +30,6 @@ class Handler {
       };
 
     req.send();
-  }
-
-  // TODO: getData2 not working yet
-  getData2(ref, _params, callback = 'this.setData', error = 'this.error',
-  _responseType = 'json', _reqType = 'GET') {
-    let tmpUrl = ref.apiUrl + '?' + ref.apiKey + _params;
-    fetch(tmpUrl)
-    .then(response => response.json())
-    .then(data => callback);
   }
 
   fetchMovieListByGender(_gender) {
@@ -138,11 +128,5 @@ function setup() {
   return url + 'apikey=' + apiKey + '&';
 }
 
-var a = new Handler('http://www.omdbapi.com/', 'apikey=4bc0d23c');
-//popo7894562
-//SOTGzzIO1n3CDioeXBwxcZcJTNecfd46YNcFgHiifZxuadoT
-//popo789456
-//ctLIKpLcbYJgltiblRdK5qyvTSzt0yRyIh3vXGomgbcKO0BX
-var b = new Handler('https://cors-anywhere.herokuapp.com/https://neutrinoapi.com/geocode-reverse', 'user-id=popo7894562&api-key=SOTGzzIO1n3CDioeXBwxcZcJTNecfd46YNcFgHiifZxuadoT');
-b.getGeoData();
-a.__init__();
+var a = new Handler('https://neutrinoapi.com/geocode-reverse', 'user-id=popo789456&api-key=ctLIKpLcbYJgltiblRdK5qyvTSzt0yRyIh3vXGomgbcKO0BX');
+a.getGeoData();
