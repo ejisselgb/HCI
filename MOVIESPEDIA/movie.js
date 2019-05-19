@@ -5,22 +5,28 @@ var clase = new connectionApi();
 var Data = JSON.parse(data)
 console.log(data)
 
-// function getInfoMovie(url,string){
-// 	return new Promise(function(resolve,reject){
-// 		var request = new XMLHttpRequest();	
-// 		request.open('GET', url + string, true);
-// 		request.onload = function(){
-// 			var data = JSON.parse(this.response);
-// 			if(request.status == 200){
-// 				resolve(data)
-// 			}
-// 		}
-// 		request.send();
-// 	})
-// }
+var url = "https://neutrinoapi.com/geocode-reverse?user-id=ejissel&api-key=aP6Sq9xQf84lrQckw77cuwjDd2h8IMRcdM0xGBlYWNymGvUT&latitude=3.3502761999999997&longitude=-76.5314704"  
+var params = {
+    'user-id': 'ejissel',
+    'api-key': 'aP6Sq9xQf84lrQckw77cuwjDd2h8IMRcdM0xGBlYWNymGvUT',
+};
+
+navigator.geolocation.getCurrentPosition(function(position){
+	console.log(position)
+	if(position.coords.latitude == 3.3502761999999997 || position.coords.longitude == -76.5314704 ){
+		console.log("amor")
+	}
+})	
 
 var p
 function loadCatalog(value){
+
+	if(document.getElementById('imgMov') != null){
+		var ls = document.getElementById('elemento');
+		while(ls.firstChild){
+			ls.removeChild(ls.firstChild)
+		}
+	}
 	for(var i in Data[0].movies){
 		if(Data[0].movies[i].gender == value){
 			for(var k in Data[0].movies[i].movies){
@@ -37,6 +43,7 @@ function createDom(){
 		console.log(resolve)
 		var image = document.createElement('img')
 		image.src = resolve.Poster
+		image.id = "imgMov"
 		document.getElementById('elemento').appendChild(image)
 	})
 }
