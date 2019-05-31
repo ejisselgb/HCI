@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicon.png">
+	<title>ALaMano</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid box">
+		<div class="row header">
+			<div class="col-1">
+				<img class="logo" src="logo1.png">
+			</div>
+			<div class="col-9"></div>
+			<div class="col-1 user-name">
+				<p>John Doe</p>
+			</div>
+			<div class="col-1 out">
+					<a  href="file:///home/camilo/Dropbox/Universidad/HCI/Proyecto/login.html?"><img class="exit" src="exit.svg"></a>
+			</div>
+		</div>
+		<div class="row hero-image">
+			<div class="col-6 hero-text">
+				<h1 style="font-size: 4vw; color:white"><strong>Consigue tus certificados de manera más rápida y sencilla.</strong></h1>			</div>
+			<div class="arrow-down col-6"></div>
+		</div>
+		<div class="row card-deck">
+
+				<div class="col-md-2"></div>
+				<div class="col-md-2 card">
+				  <img class="card-img-top" src="certificadoLaboral.png" alt="Card image cap">
+				  <div class="card-body">
+					<h3 class="card-title">Certificado laboral</h3>
+					<p class="card-text">Solicita tu certificado laboral, y escoja si desea mostrar su salario.</p>
+					<button type="button" class="btn butn" data-toggle="modal" data-target="#exampleModal"><p class="request">Solicitar</p></button>		
+				</div>
+				</div>
+
+
+				<div class="col-md-2 card" >
+				  <img class="card-img-top" src="pago.png" alt="Card image cap">
+				  <div class="card-body">
+					<h3 class="card-title">Comprobante de pago</h3>
+					<p class="card-text">Solicita tu comprobante de pago, y escoje el mes y el año.</p>
+					<button type="button" class="btn butn" data-toggle="modal" data-target="#exampleModal2"><p class="request">Solicitar</p></button>
+
+				</div>
+				</div>
+
+
+				<div class="col-md-2 card" >
+				  	<img class="card-img-top" src="ingresos.png" alt="Card image cap">
+				  	<div class="card-body">
+						<h3 class="card-title">Ingresos y retenciones</h3>
+						<p class="card-text">Solicita tu comprobante de pago, y escoje el año.</p>
+						<button type="button" class="btn butn" data-toggle="modal" data-target="#exampleModal3"><p class="request">Solicitar</p></button>
+					</div>
+				</div>
+
+
+				<div class="col-md-2 card">
+				  <img class="card-img-top" src="embajadas.png" alt="Card image cap">
+				  <div class="card-body">
+						<h3 class="card-title">Certificado de embajadas</h3>
+						<p class="card-text">Solicita tu certificado de embajadas, escoje la embajada, el mes y el año.</p>
+						<button type="button" class="btn butn" data-toggle="modal" data-target="#exampleModal4"><p class="request">Solicitar</p></button>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+				
+		</div>
+
+		<div class="row footer">
+			<div class="col-md-3"></div>
+			<div class="col-md-2 info">
+				<a class="inf" href="#"><p>Sobre nosotros</p></a>
+			</div>
+			<div class="col-md-2 info">
+				<a class="inf" href="#"><p>Contáctenos</p></a> 
+			</div>
+			<div class="col-md-2 info">
+				<a class="inf" href="#"><p>¿Dudas?</p></a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="close-div">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" class="round-close">&times;</span>
+					</button>
+				</div>
+				<div class="modal-header">
+					<h1 class="modal-title" id="exampleModalLabel">Certificado Laboral</h1>
+				</div>
+				<div class="modal-body" style="text-align: center">
+					<p>Mostrar Salario:</p>
+						<input type="checkbox" name="check" class="checkbox-round">
+				</div>
+				<div class="modal-footer">
+				<button onclick="alertar()" type="button" class="btn btn-primary" data-dismiss="modal">Descarga directa</button>
+				<button onclick="mail()" type="button" class="btn btn-primary" data-dismiss="modal">Enviar por correo</button>
+				<p class="p">Indique si quiere mostrar su salario, y elija el método por el cual quiere recibir su certificado.</p>
+			</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="close-div">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" class="round-close">&times;</span>
+						</button>
+					</div>
+					<div class="modal-header">
+						<h1 class="modal-title" id="exampleModalLabel">Comprobante de pago</h1>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-2"></div>
+							<div class="col-4">
+								<select class="date">
+									<option >Mes</option>
+									<option >Enero</option>
+									<option >Febrero</option>
+									<option >Marzo</option>
+									<option >Abril</option>
+									<option >Mayo</option>
+									<option >Junio</option>
+									<option >Julio</option>
+									<option >Agosto</option>
+									<option >Septiembre</option>
+									<option >Octubre</option>
+									<option >Noviembre</option>
+									<option >Diciembre</option>
+								</select>
+							</div>							
+							<div class="col-4">
+								<select class="date" name="birth-year">
+									<option >Año</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+									<option value="2014">2014</option>
+									<option value="2013">2013</option>
+									<option value="2012">2012</option>
+									<option value="2011">2011</option>
+									<option value="2010">2010</option>
+									<option value="2009">2009</option>
+									<option value="2008">2008</option>
+									<option value="2007">2007</option>
+									<option value="2006">2006</option>
+									<option value="2005">2005</option>
+									<option value="2004">2004</option>
+									<option value="2003">2003</option>
+									<option value="2002">2002</option>
+									<option value="2001">2001</option>
+									<option value="2000">2000</option>
+									<option value="1999">1999</option>
+									<option value="1998">1998</option>
+									<option value="1997">1997</option>
+									<option value="1996">1996</option>
+									<option value="1995">1995</option>
+									<option value="1994">1994</option>
+									<option value="1993">1993</option>
+									<option value="1992">1992</option>
+									<option value="1991">1991</option>
+									<option value="1990">1990</option>
+								</select>
+							</div>
+							<div class="col-2"></div>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button onclick="alertar()" type="button" class="btn btn-primary" data-dismiss="modal">Descarga directa</button>
+					<button onclick="mail()" type="button" class="btn btn-primary" data-dismiss="modal" >Enviar por correo</button>
+					<p class="p">Ingrese el mes, el año y el método por el cuál desea obtener su comprobante.</p>
+				</div>
+					
+				</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="close-div">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="round-close">&times;</span>
+							</button>
+						</div>
+						<div class="modal-header">
+							<h1 class="modal-title" id="exampleModalLabel">Ingresos y Retenciones</h1>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-4"></div>					
+								<div class="col-4">
+									<select class="date" name="birth-year">
+										<option >Año</option>
+										<option value="2018">2018</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+										<option value="2013">2013</option>
+										<option value="2012">2012</option>
+										<option value="2011">2011</option>
+										<option value="2010">2010</option>
+										<option value="2009">2009</option>
+										<option value="2008">2008</option>
+										<option value="2007">2007</option>
+										<option value="2006">2006</option>
+										<option value="2005">2005</option>
+										<option value="2004">2004</option>
+										<option value="2003">2003</option>
+										<option value="2002">2002</option>
+										<option value="2001">2001</option>
+										<option value="2000">2000</option>
+										<option value="1999">1999</option>
+										<option value="1998">1998</option>
+										<option value="1997">1997</option>
+										<option value="1996">1996</option>
+										<option value="1995">1995</option>
+										<option value="1994">1994</option>
+										<option value="1993">1993</option>
+										<option value="1992">1992</option>
+										<option value="1991">1991</option>
+										<option value="1990">1990</option>
+									</select>
+								</div>
+								<div class="col-4"></div>
+	
+							</div>
+						</div>
+						<div class="modal-footer">
+						<button onclick="alertar()" type="button" class="btn btn-primary" data-dismiss="modal" >Descarga directa</button>
+						<button onclick="mail()" type="button" class="btn btn-primary" data-dismiss="modal" >Enviar por correo</button>
+						<p class="p">Al ingresar el año, elija el método por el cual desea obtener su certificado.</p>
+					</div>
+						
+					</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="close-div">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true" class="round-close">&times;</span>
+								</button>
+							</div>
+							<div class="modal-header">
+								<h1 class="modal-title" id="exampleModalLabel">Certificado de embajadas</h1>
+							</div>
+							<div class="modal-body">
+								<div class="row emb">
+									<div class="col-4"></div>
+									<input class="col-4 embassy" type="text" placeholder="Embajada" required>
+									<div class="col-4"></div>
+								</div>
+								<div class="row">
+									<div class="col-2"></div>
+									<div class="col-4">
+										<select class="date">
+											<option >Mes</option>
+											<option >Enero</option>
+											<option >Febrero</option>
+											<option >Marzo</option>
+											<option >Abril</option>
+											<option >Mayo</option>
+											<option >Junio</option>
+											<option >Julio</option>
+											<option >Agosto</option>
+											<option >Septiembre</option>
+											<option >Octubre</option>
+											<option >Noviembre</option>
+											<option >Diciembre</option>
+										</select>
+									</div>							
+									<div class="col-4">
+										<select class="date" name="birth-year">
+											<option >Año</option>
+											<option value="2018">2018</option>
+											<option value="2017">2017</option>
+											<option value="2016">2016</option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+											<option value="2012">2012</option>
+											<option value="2011">2011</option>
+											<option value="2010">2010</option>
+											<option value="2009">2009</option>
+											<option value="2008">2008</option>
+											<option value="2007">2007</option>
+											<option value="2006">2006</option>
+											<option value="2005">2005</option>
+											<option value="2004">2004</option>
+											<option value="2003">2003</option>
+											<option value="2002">2002</option>
+											<option value="2001">2001</option>
+											<option value="2000">2000</option>
+											<option value="1999">1999</option>
+											<option value="1998">1998</option>
+											<option value="1997">1997</option>
+											<option value="1996">1996</option>
+											<option value="1995">1995</option>
+											<option value="1994">1994</option>
+											<option value="1993">1993</option>
+											<option value="1992">1992</option>
+											<option value="1991">1991</option>
+											<option value="1990">1990</option>
+										</select>
+									</div>
+									<div class="col-2"></div>
+		
+								</div>
+							</div>
+							<div class="modal-footer">
+							<button onclick="alertar()" type="button" class="btn btn-primary" data-dismiss="modal">Descarga directa</button>
+							<button onclick="mail()" type="button" class="btn btn-primary" data-dismiss="modal">Enviar por correo</button>
+							<p class="p">Ingrese el mes, el año y el método por el cuál desea obtener su comprobante.</p>
+						</div>
+							
+						</div>
+						</div>
+					</div>
+					
+		
+	
+	</div>
+</body>
+<script>
+	$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').trigger('focus')
+	})
+</script>
+<script>
+	function alertar(){
+		alert("Su descarga ha sido exitosa.");
+	}
+
+	function mail(){
+		alert("Su certificado ha sido enviado a su correo electrónico.");
+
+	}
+</script>
+
+
+</html>
+

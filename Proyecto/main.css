@@ -1,0 +1,217 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	overflow-x: hidden;
+}
+
+.container-fluid {
+    background-size: 100% 100%;
+	background-attachment: fixed;
+	background-color: #EFF2F7;
+
+}
+
+.box{
+	position: relative;
+}
+
+.header{
+	padding-top: 1%;
+	padding-bottom: 2%;
+	background-color: #EFF2F7;
+}
+
+.logo{
+	margin-top: 5%;
+	margin-left: 1%;
+}
+
+.hero-image{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("docu.png");
+        position: relative;
+        background-repeat: no-repeat;
+		height: 80vh;
+        background-size: 100% 100%;
+}
+
+.hero-text{
+    transform: translate(0, 30%);
+}
+
+.footer{
+	background-color: #343F4B;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+}
+
+.inf{
+	color: white;
+	font-size: 1.3em;
+}   
+
+
+@media (min-width: 768px){
+	.info{
+		margin-top: 10%;
+	}
+}
+
+@media (max-width: 768px){
+	.info{
+		text-align: left;
+	}
+}
+
+.card{
+	height: 50vh;
+}
+
+.card-body{
+	padding: 0rem !important;
+	height: 25% !important;
+}
+.card-deck{
+	margin-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+}
+
+.card-title{
+	font-size: 2.5vh;
+}
+
+.card-text{
+	font-size: 1.5vh;
+}
+
+.arrow-down{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.arrow-down::after{
+	content: "";
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin: auto;
+	margin-top: 50vh;
+	left: 0;
+
+	left: 0;
+	bottom: 0; 
+	border-right: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-animation: 1 arrow infinite ease;
+	animation: 1s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow{
+	0%, 100%{
+		top: 50px;
+	}
+	50% {
+		top: 80px;
+	}
+}
+
+.modal-header{
+	display: inline !important;
+	text-align: center;
+	border-bottom: 0 none !important;
+	margin-top: 10%;
+}
+
+
+.checkbox-round {
+	bottom: 0;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+	cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: green;
+}
+
+.btn{
+	font-size: 100% !important;
+}
+
+.btn-primary{
+	background-color: #68ABF3 !important;
+	border: 0 !important; 
+	width: 10vw !important;
+	font-size: 1vw !important;
+} 
+.modal-footer{
+	text-align: center !important;
+	display: inline !important;
+	padding-bottom: 10% !important;
+	border-top: 0 none !important;
+}
+
+.butn{
+	background-color: #68ABF3 !important;
+	border: 0 !important;
+	width: 10vw !important;
+	height: 5vh;
+}
+
+.p{
+	padding-top: 5%;
+}
+
+.date{
+	width: 100%;
+	border-radius: 10%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.embassy{
+	width: 100%;
+	border-radius: 10%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.emb{
+	padding-bottom: 5%;
+}
+
+.exit{
+	width: 40%;
+	height: 40%;
+	vertical-align: middle;
+	margin-top: 5vh;
+}
+
+.card{
+	border-radius: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.user-name{
+	margin-top: 5vh;
+}
+
+.request{
+	color: white;
+}
