@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='https://rawgit.com/tempusdominus/bootstrap-4/master/build/css/tempusdominus-bootstrap-4.min.css'>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -25,64 +29,201 @@
 </head>
 <body>
 
-	<div class="container">
-	  <div class="row">
-	    <div class="col"></div>
-	    <div class="col"></br></br></div>
-	    <div class="col"></div>
-	    <div class="w-100"></div>
-	    <div class="col"></div>
-	    <div class="col"></br></br></div>
-	    <div class="col"></div>
-	    <div class="w-100"></div>
-	    <div class="col"></div>
-	    <div class="col-12">
-	    	<div class="card-group">
-			  <div class="card">
-			    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-			    <div class="card-body">
-			      <h5 class="card-title">Certificado Laboral</h5>
-			      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</br></br></p>
-			      <div class="card-footer">
-			      	<button type="button" class="btn btn-outline-primary btn-block">Primary</button>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img src="https://images.unsplash.com/photo-1503775387537-3258ef9f1af9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" class="card-img-top" alt="">
-			    <div class="card-body">
-			      <h5 class="card-title">Comprobante de Pago</h5>
-			      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</br></br></br></br></p>
-			      <div class="card-footer">
-			      	<button type="button" class="btn btn-outline-primary btn-block">Generar</button>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img src="https://images.unsplash.com/photo-1516728043722-b394cb2f689e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-			    <div class="card-body">
-			      <h5 class="card-title">Ingresos y Retenciones</h5>
-			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			      <div class="card-footer">
-			      	<button type="button" class="btn btn-outline-primary btn-block">Generar</button>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img src="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-			    <div class="card-body">
-			      <h5 class="card-title">Certificado Embajadas</h5>
-			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			      <div class="card-footer">
-			      	<button type="button" class="btn btn-outline-primary btn-block">Generar</button>
-			      </div>
-			    </div>
-			  </div>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="card-group">
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
+				<div class="card-body">
+					<h5 class="card-title">Certificado Laboral</h5>
+					<p class="card-text">Sirve para ...</br></br></br></br></br></br></p>
+					<div class="card-footer">
+						<button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#certificadoLaboral">Generar</button>
+					</div>
+				</div>
+				</div>
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1503775387537-3258ef9f1af9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" class="card-img-top" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Comprobante de Pago</h5>
+						<p class="card-text">Con esto usted podra...</br></br></br></br></br></br></p>
+						<div class="card-footer">
+							<button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#comprobantePago">Generar</button>
+						</div>
+				</div>
+				</div>
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1516728043722-b394cb2f689e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Ingresos y Retenciones</h5>
+						<p class="card-text">Se exige que usted tenga...</br></br></br></br></br></br></p>
+						<div class="card-footer">
+							<button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#ingresosRetenciones">Generar</button>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Certificado Embajadas</h5>
+						<p class="card-text">Para realizar algun algun tramite...</br></br></br></br></br></br></p>
+						<div class="card-footer">
+							<button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#certificadoEmbajada">Generar</button>
+						</div>
+					</div>
+				</div>
 			</div>
 	    </div>
-	    <div class="col"></div>
-	  </div>
 	</div>
 
+	<div class="modal fade" id="certificadoLaboral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Certificado Laboral</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="cedula">Cedula</label>
+							<input type="text" class="form-control" id="cedula" placeholder="EJ: 11574934">
+						</div>
+					<form>
+				</div>
+				<div class="modal-footer">.
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Solicitar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="comprobantePago" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Comprobante de Pago</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="cedula">Cedula</label>
+							<input type="text" class="form-control" id="cedula" placeholder="EJ: 11574934">
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="ano">Año</label>
+								<input type="text" class="form-control" id="ano" placeholder="EJ: 2018">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="mes">Mes</label>
+								<input type="text" class="form-control" id="mes" placeholder="EJ: 03">
+							</div>
+						</div>
+					<form>
+				</div>
+				<div class="modal-footer">.
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Solicitar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="ingresosRetenciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Ingresos y Retenciones</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="cedula">Cedula</label>
+							<input type="text" class="form-control" id="cedula" placeholder="EJ: 11574934">
+						</div>
+						<div class="form-group">
+							<label for="ano2">Año</label>
+							<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+								<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+								<span class="input-group-addon" data-target="#datetimepicker1" data-toggle="datetimepicker">
+									<span class="fa fa-calendar"></span>
+								</span>
+							</div>
+						</div>
+					<form>
+				</div>
+				<div class="modal-footer">.
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Solicitar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="certificadoEmbajada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Certificado Embajadas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="cedula3">Cedula</label>
+							<input type="text" class="form-control" id="cedula3" placeholder="EJ: 11574934">
+						</div>
+						<div class="form-group">
+							<label for="embajada">Embajada</label>
+							<select id="embajada" class="form-control">
+								<option selected>Escoja...</option>
+								<option>EEUU</option>
+								<option>Alemana</option>
+								<option>Española</option>
+							</select>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="vacasIni">Inicio Vacaciones</label>
+								<input type="text" class="form-control" id="vacasIni" placeholder="EJ: 2018-11-24">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="vacasFin">Fin Vacaciones</label>
+								<input type="text" class="form-control" id="vacasFin" placeholder="EJ: 2018-11-28">
+							</div>
+						</div>
+					<form>
+				</div>
+				<div class="modal-footer">.
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Solicitar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+	<script src='https://rawgit.com/tempusdominus/bootstrap-4/master/build/js/tempusdominus-bootstrap-4.min.js'></script>
+
+	<script type="text/javascript">
+		$('#datetimepicker1').datetimepicker({
+			viewMode: 'years',
+    		format: 'YYYY'
+		});
+	</script>
 </body>
 </html>
