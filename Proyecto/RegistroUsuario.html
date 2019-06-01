@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="RegistroUsuario.css">
+<meta charset="utf-8">
+</head>
+<body>
+  <div class="container-fluid" id="cont">
+    <div class="row" id="rowsito">
+      <div class="col-1" id="cols"><a href="main.html"><button id="btn_back"><img src="back.svg" id="logo"></button></a></div>
+      <div class="col-10" id="cols1"><p id="header">Registro de usuarios : Registro usuarios</p></div>
+      <div class="col-1" id="cols" ><a href="login.html"><button id="btn"><img src="logout.svg" id="logo"></button></a></div> 
+    </div>
+  <div class="row">
+    <div class="col">
+      <button class="tablink" onclick="openPage('RegistroEmpleado','cont','Reg', this)" id="Reg">Registro usuarios</button>
+    </div>
+    <div  class="col">
+      <button class="tablink" onclick="openPage('ListaEmpleado','cont1' ,'Lis', this)" id="Lis">Lista usuarios</button>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div id="RegistroEmpleado" class="tabcontent">
+
+      <table id="tabla" width="100%"  border="0">
+        <tr>
+          <td ><p class="texto"> Tipo identificacion </p> </td>
+          <td > <select> <option value = "seleccionar">Cedula ciudadania </option> </select></td>
+          <td ><p class="texto" >Contraseña </p> </td>
+          <td > <input type="password" name="" value="" id="contraseñaFor"> </td>
+        </tr>
+        <tr>
+          <td ><p class="texto" > Numero identificacion </p> </td>
+          <td > <input type="text" name="" value="" id="numeroID">  </td>
+          <td ><p class="texto"> Confirmar contraseña </p> </td>
+          <td > <input type="password" name="" value="" id="confirmarContraseñaFor">    </td>
+        </tr>
+        <tr>
+          <td><p class="texto" > Nombre </p> </td>
+          <td> <input type="text" name="" value="" id="nombreFor">  </td>
+          <td><p class="texto" >Rol </p> </td>
+          <td> <select id="rol"> <option value = "seleccionar">Administrador </option> </select> </td>
+        </tr>
+        <tr>
+          <td><p class="texto" > Apellidos </p> </td>
+          <td> <input type="text" name="" value="" id="apellidoFor">  </td>
+        </tr>
+        <tr>
+          <td><p class="texto" >Email </p> </td>
+          <td> <input type="text" name="" value="" id="emailFor">  </td>
+          <td> <button class="buttonsBelow" onclick="revisarForm()"> Guardar</button>  </td> <!--revisar-->
+          <td> <button class="buttonsBelow"> Limpiar</button></td>
+        </tr>
+        <tr>
+          <td><p class="texto" >Usuario </p> </td>
+          <td> <input type="text" name="" value="" id = "usuarioFor">  </td>
+        </tr>
+        <tr>
+        </tr>
+
+      </table>
+
+
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid" id="cont1" >
+    <div class="row" id="rowsito">
+      <div class="col-1" id="cols"><a href="main.html"><button id="btn_back"><img src="back.svg" id="logo"></button></a></div>
+      <div class="col-10" id="cols1"><p id="header">Registro de usuarios : Lista usuarios</p></div>
+      <div class="col-1" id="cols" ><a href="login.html"><button id="btn"><img src="logout.svg" id="logo"></button></a></div> 
+    </div>
+    <div class="row">
+    <div class="col">
+      <button class="tablink" onclick="openPage('RegistroEmpleado','cont','Reg', this)" id="Lis">Registro usuarios</button>
+    </div>
+    <div  class="col">
+      <button class="tablink" onclick="openPage('ListaEmpleado','cont1' ,'Lis', this)" id="Lis">Lista usuarios</button>
+    </div>
+  </div>
+  </div>
+  
+  <div class="row">
+    <div id="ListaEmpleado" class="tabcontent">
+      <div class = "row">
+        <div class="col-7" >
+        </div>
+        <div class="col-4" >
+        <button style=" float: right !important;" type="button" class="filtrar" id="filtrar"> Filtro </button>
+        </div>
+        <div class="col-1"></div>
+
+
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col" align="center">
+          <table id="myTable">
+            <tr>
+              <th>Documento identidad </th>
+              <th> Nombre usuario </th>
+              <th> Usuario</th>
+              <th>Rol</th>
+              <th>Acción</th>
+            </tr>
+
+          </table>
+
+        </div>
+      <div class="overlay" id="overlay">
+        <div class="popUp" id="popUp">
+          <div class="popHeader"> <p>Filtrar </p> </div>
+          <div class="popBody">
+               <table id="FiltTable" border="0">
+                 <tr>
+                   <td>
+                       <select class="selection" id="selecting">
+                          <option value= "0"> Documento identidad </option>
+                          <option value= "1"> Nombre usuario</option>
+                          <option value= "2"> Usuario </option>
+                          <option value= "3">Rol</option>
+                       </select>
+                    </td>
+                    <td><input type="text" id="myInput"></td>
+                  </tr>
+                </table>
+                 <br><br>
+                 <button type="button" id="buttonFilt"> Aceptar </button>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="RegistroUsuario.js"></script>
+</body>
+</html>
