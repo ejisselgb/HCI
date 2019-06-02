@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="logo3.png">
+	<title>YouMovie</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="movie_catalog.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+
+</head>
+<body>
+	<!-- Page header -->
+	<div id="header">
+		<div id="myNav" class="overlay">
+		  <!-- Button to close the overlay navigation -->
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <!-- Overlay content -->
+		  <div class="overlay-content">
+		  	<ul style="list-style: none">
+				<li><button style="font-size: 20px;" class="btn_nav" value="comedy" onclick="loadCatalog(this.value)">Comedy</button></li>
+				<br>
+				<li><button style="font-size: 20px;" class="btn_nav" value="romance" onclick="loadCatalog(this.value)">Romance</button></li>
+				<br>
+				<li><button style="font-size: 20px;" class="btn_nav" value="scary" onclick="loadCatalog(this.value)">Horror</button></li>
+				<br>
+				<li><button style="font-size: 20px;" class="btn_nav" value="animated" onclick="loadCatalog(this.value)">Animated</button></li>
+		  	</ul>
+		  </div>
+
+		<div id ="elemento" >
+		</div>
+		</div>
+
+		<!-- Use any element to open/show the overlay navigation menu -->
+
+		<!-- logo -->
+		<div id="wrapper">
+			<div id="logo">
+				<img src="logo.png">
+			</div>
+			<div id="categories_menu">
+				<h3><a onclick="openNav()" style="color: white; font-family: Roboto;">Categories</a></h3>
+			</div>
+		</div>
+		<!-- Search bar -->
+		<div class="mover">
+			<h1 id="title">Find all your favorite <br>movies here.</h1>
+			<br>
+			<p id="mini_text">We have a big catalog.</p>
+			<input id="name" class="inpt" placeholder="Find your movie..." required></input>
+			<button id="btn" type="button" data-toggle="modal" data-target="#myModal" onclick="return getData()" class="btn">Go!</button>
+		</div>
+
+	</div>
+
+
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div id="modalContent" class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 id="movieTitle" class="modal-title">Sorry, Not Found :(</h4>
+        </div>
+        <div class="modal-body">
+          <div id="plot_poster_place">	
+	          <div id="poster_place">
+	          	<img id="moviePoster">
+	          </div>
+	          <div id="plot_place">
+	          	<h4 id="moviePlot"></h4>
+	          	<h4 id="genre"></h4>
+	          	<h4 id="director"></h4>
+	          	<h4 id="writer"></h4>
+	          </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="btn" type="button" class="btn btn-default" data-dismiss="modal">Got it :)</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  	<script type="text/javascript" src="dataMovie.json"></script>
+	<script type="text/javascript" src="infoMovie.js"></script>
+	<script type="text/javascript" src="movie_catalog2.js"></script>
+	<script>
+	function openNav() {
+	  document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav() {
+	  document.getElementById("myNav").style.width = "0%";
+	}
+	</script>
+
+
+</body>
+</html>
