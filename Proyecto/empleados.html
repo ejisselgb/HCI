@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="empleados.css">
+<meta charset="utf-8">
+</head>
+<body>
+  <div class="container-fluid" id="cont">
+    <div class="row" id="rowsito">
+      <div class="col-1" id="cols"><a href="main.html"><button id="btn_back"><img src="back.svg" id="logo"></button></a></div>
+      <div class="col-10" id="cols1"><p id="header">Empleados : Registro empleado</p></div>
+      <div class="col-1" id="cols" ><a href="login.html"><button id="btn"><img src="logout.svg" id="logo"></button></a></div> 
+    </div>
+  <div class="row">
+    <div class="col">
+      <button class="tablink" onclick="openPage('RegistroEmpleado','cont','Reg', this)" id="Reg">Registro empleado</button>
+    </div>
+    <div  class="col">
+      <button class="tablink" onclick="openPage('ListaEmpleado','cont1' ,'Lis', this)" id="Lis">Lista empleados</button>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div id="RegistroEmpleado" class="tabcontent">
+
+      <table id="tabla" width="100%" >
+        <tr>
+          <td><p class="texto"> Nombre </p> </td>
+          <td> <input type="text" name="" value="" id="nombre">  </td>
+          <td><p class="texto" >Fecha retiro </p> </td>
+          <td> <input type="text" name="" value="" id="fecha"> </td>
+        </tr>
+        <tr>
+          <td><p class="texto"> Cedula </p> </td>
+          <td> <input type="text" name="" value="" id="cedula">  </td>
+          <td><p class="texto"> Tipo contrato </p> </td>
+          <td> <select> <option value = "seleccionar">Seleccionar </option>   </select> </td>
+        </tr>
+        <tr>
+          <td><p class="texto"> Lugar expedición </p> </td>
+          <td> <input type="text" name="" value="" id="lugar">  </td>
+          <td><p class="texto" >Cargo </p> </td>
+          <td> <input type="text" name="" value="" id="cargo"> </td>
+        </tr>
+        <tr>
+          <td><p class="texto"> Fecha expedición </p> </td>
+          <td> <input type="text" name="" value="" id="fechaE">  </td>
+          <td><p class="texto" >Salario básico </p> </td>
+          <td> <input type="text" name="" value="" id="salario"> </td>
+        </tr>
+        <tr>
+          <td><p class="texto">Email </p> </td>
+          <td> <input type="text" name="" value="" id="email">  </td>
+          <td><p class="texto" >Salario variable </p> </td>
+          <td> <input type="text" name="" value="" id="salarioV"> </td>
+        </tr>
+        <tr>
+          <td><p class="texto">Fecha ingreso </p> </td>
+          <td> <input type="text" name="" value="" id="FechaI">  </td>
+          <td><p class="texto" >Activo(a)</p> </td>
+          <td> <input type="radio" name="" value="">Sí <input type="radio" name="" value="">No </td>
+        </tr>
+        <tr>
+          <td colspan="2" id="buttonsBelow1"> <button onclick="addElement()" type="button" value="Guardar" class="buttonsBelow" > Guardar </button></td>
+          <td colspan="2" id="buttonsBelow2"> <button onclick="empty()" type="button" value="Limpiar" class="buttonsBelow" > Limpiar </button></td>
+        </tr>
+
+      </table>
+
+
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid" id="cont1" >
+    <div class="row" id="rowsito">
+      <div class="col-1" id="cols"><a href="main.html"><button id="btn_back"><img src="back.svg" id="logo"></button></a></div>
+      <div class="col-10" id="cols1"><p id="header">Empleados : Lista empleados</p></div>
+      <div class="col-1" id="cols" ><a href="login.html"><button id="btn"><img src="logout.svg" id="logo"></button></a></div> 
+    </div>
+    <div class="row">
+    <div class="col">
+      <button class="tablink" onclick="openPage('RegistroEmpleado','cont','Reg', this)" id="Lis">Registro empleado</button>
+    </div>
+    <div  class="col">
+      <button class="tablink" onclick="openPage('ListaEmpleado','cont1' ,'Lis', this)" id="Lis">Lista empleados</button>
+    </div>
+  </div>
+  </div>
+  
+  <div class="row">
+    <div id="ListaEmpleado" class="tabcontent">
+      <div class = "row">
+        <div class="col-7" >
+        </div>
+        <div class="col-4" >
+        <button style=" float: right !important;" type="button" class="filtrar" id="filtrar"> Filtro </button>
+        </div>
+        <div class="col-1"></div>
+
+
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col" align="center">
+          <table id="myTable">
+            <tr>
+              <th>Cedula </th>
+              <th> Nombre </th>
+              <th> Correo electronico</th>
+              <th>Salario básico</th>
+              <th>Acción</th>
+            </tr>
+
+          </table>
+
+        </div>
+      <div class="overlay" id="overlay">
+        <div class="popUp" id="popUp">
+          <div class="popHeader"> <p>Filtrar </p> </div>
+          <div class="popBody">
+               <table id="FiltTable" border="0">
+                 <tr>
+                   <td>
+                       <select class="selection" id="selecting">
+                          <option value= "0"> Cedula </option>
+                          <option value= "1"> Nombre</option>
+                          <option value= "2"> Correo electronico </option>
+                          <option value= "3">Salario básico </option>
+                       </select>
+                    </td>
+                    <td><input type="text" id="myInput"></td>
+                  </tr>
+                </table>
+                 <br><br>
+                 <button type="button" id="buttonFilt"> Aceptar </button>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="empleados.js"></script>
+</body>
+</html>

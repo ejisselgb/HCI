@@ -1,0 +1,21 @@
+body{
+			font-family: arial;
+			background-color: #0000;
+		}
+#paella{
+	max-width:80%; 
+    height:auto;
+    border-radius: 100%;
+}
+#ingredientesMelos{
+	background-color: #F8E6AE;
+
+}
+#background{
+	background-image: url("https://hips.hearstapps.com/del.h-cdn.co/assets/17/23/1496670916-delish-slow-cooker-paella-3.jpg");
+	background-repeat: no-repeat;
+  	background-size: 100%;
+
+
+}
+
