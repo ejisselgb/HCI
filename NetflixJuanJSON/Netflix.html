@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix_Juan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="dataMovies.json"></script>
+    <script src="ConexionAPI.js"></script>
+    <script src="BackendAPI.js"></script>
+
+    
+
+    <!--
+    <script src="estudiante.js"></script>
+    <script src="ClassMovie.js"></script>
+    -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<div class="row">
+
+	<div class="col-lg-2">
+	</div>
+	
+	<div class="col-lg-8">
+		<center>
+			<img src="logo.png">
+		</center>
+	</div>
+
+	<div class="col-lg-2">
+	</div>
+
+</div>
+
+<div class="row">
+		<div class="col-lg-2">
+			<br>
+		</div>
+		<div class="col-lg-8">
+			<center>
+				<p id="ubicacion">Buscando ciudad:</p>
+				<p id="direccion">Buscando direccion:</p>
+			</center>
+		</div>
+		<div class="col-lg-2">
+			<br>
+		</div>
+	</div>
+
+<div class="row">
+</div>
+
+<div class="row">
+	<div class="col-lg-1">
+	</div>
+	<div class="col-lg-1">
+		<center>
+			<button onclick="loadCatalog(this.value)" value="scary" type="button" class="btn btn-outline-primary">Miedo</button>
+		</center>
+	</div>
+	<div class="col-lg-1">
+		<center>
+			<button onclick="loadCatalog(this.value)" value="romance" type="button" class="btn btn-outline-success">Romance</button>
+		</center>
+	</div>
+	<div class="col-lg-1">
+		<center>
+			<button onclick="loadCatalog(this.value)" value="comedy" type="button" class="btn btn-outline-danger">Comedia</button>
+		</center>
+	</div>
+	<div class="col-lg-1">
+		<center>
+			<button onclick="loadCatalog(this.value)" value="animated" <button type="button" class="btn btn-outline-warning">Animada</button>
+		</center>
+	</div>
+	<div class="col-lg-4">
+	</div>
+	<div class="col-lg-2">
+		<div>
+			<input type="text" id="titleInput" class="textright">
+			<img onclick="holi()" id="search" src="searchlogo.png" align="right" class="imglogo">
+		</div>
+	</div>
+	<div class="col-lg-1">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<hr>
+	</div>
+</div>
+
+<!--
+<h1 id="hola" style="font-size:30px">Elaborado por Juan Fernando Escobar</h1>
+<h5 style="font-size:5em">Ingresa aqui la pelicula que quieres buscar</h5>
+-->
+
+<div class="row">
+
+	<div class="col-lg-5">
+		
+
+		<div class="row">
+
+			<div class="col-lg-2">
+			</div>
+
+			<div class="col-lg-8">
+
+				<center>
+					<h2>Recomendaciones</h2>
+					<hr>
+				</center>
+
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				 	<ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				 	</ol>
+
+					<div class="carousel-inner">
+
+					    <div class="carousel-item active">
+						    <img class="d-block w-100 slideimg" id="image1" alt="First slide">
+						    <div class="carousel-caption d-none d-md-block carousel-new">
+								<h5 id="titleMovie1" class="franja"></h5>
+							    <p id="director1" class="franja">Director Pelicula 1</p>
+							</div>
+					    </div>
+
+					    <div class="carousel-item">
+					     	<img class="d-block w-100 slideimg" id="image2" alt="Second slide">
+					     	<div class="carousel-caption d-none d-md-block carousel-new">
+							    <h5 id="titleMovie2" class="franja">Titulo Pelicula 2</h5>
+							    <p id="director2" class="franja">Director Pelicula 2</p>
+						 	</div>
+					    </div>
+
+					    <div class="carousel-item">
+					    	<img class="d-block w-100 slideimg" id="image3" alt="Third slide">
+					    	<div class="carousel-caption d-none d-md-block carousel-new">
+							    <h5 id="titleMovie3" class="franja">Titulo Pelicula 3</h5>
+							    <p id="director3" class="franja">Director Pelicula 3</p>
+						 	</div>
+						</div>
+
+						<div class="carousel-item">
+					    	<img class="d-block w-100 slideimg" id="image4">
+					    	<div class="carousel-caption d-none d-md-block carousel-new">
+							    <h5 id="titleMovie4" class="franja">Titulo Pelicula 4</h5>
+							    <p id="director4" class="franja">Director Pelicula 4</p>
+						 	</div>
+						</div>
+
+					</div>
+
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="col-lg-2">
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<div class="col-lg-7">
+		
+
+		<center>
+			<div class="col-lg-1">
+			</div>
+			<div class="col-lg-10">
+				<h3 id="titleMoviex">a</h3>
+				<hr>
+			</div>
+			<div class="col-lg-1">
+			</div>
+		</center>
+		<div class="row">
+
+		<div class="col-lg-1">
+		</div>
+		<div class="col-lg-5">
+			<center>
+				<img id="imagex" src="">
+			</center>
+		</div>
+
+		<div class="col-lg-5">
+			<p><b>Descripcion:</b></p>
+			<p id="descripcionx" align="justify"></p>
+			<p><b>Año:</b></p>
+			<p id="yearx"></p>
+			<p><b>Genero:</b></p>
+			<p id="genrex"></p>
+			<p><b>Director:</b></p>
+			<p id="directorx"></p>
+		</div>
+
+		<div class="col-lg-1">
+		</div>
+
+		</div>
+	</div>
+
+</div>
+
+<div id="dyn">
+</div>
+
+<!--
+<script src="javascript.js"></script>
+-->
+<div class="col-lg-12">
+	<br>
+</div>
+<br>
+<div class="row" style="background-color:red">
+	<div class="col-lg-12">
+		<center>
+			<h4 id="hola">Elaborado por Juan Fernando Escobar</h4>
+		</center>
+	</div>
+</div>
+
+</body>
+</html>

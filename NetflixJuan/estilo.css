@@ -1,0 +1,22 @@
+.center {
+  text-align: center;
+}
+
+.textright{
+  float:right;
+  clear:both;
+}
+
+.imglogo {
+  width:32px;
+}
+
+.franja {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.slideimg {
+  height: 450px !important;
+  width: 50% !important;
+}

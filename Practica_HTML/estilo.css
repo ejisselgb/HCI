@@ -1,0 +1,45 @@
+.center {
+  text-align: center;
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centerimg2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.slideimg {
+  display: block;
+  width: 350px !important;
+  height: 500px !important;
+}
+
+.roundedimg {
+	border: solid;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.franja {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.marginbottom {
+	margin-bottom: 20px;<
+}
+
+/*.carousel-item .carousel-new{
+	right: auto !important;
+    left: auto !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}*/

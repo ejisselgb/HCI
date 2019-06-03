@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Alamano - Usuario</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styleusuario.css">
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="backend.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+<div class="container-fluid">
+
+	<!-- MARGIN TOP -->
+	<div class="row">
+		<div class="col-sm">
+				<br>
+    	</div>
+	</div>
+
+	<!-- CONTENIDO HEADER-->
+  	<div class="row">
+
+  		<!-- LOGO ALAMANO -->
+    	<div class="col-5">
+    		<center>
+      			<a href="index.html"><img src="images/Alamano.PNG" class="img-fluid" alt="Responsive image"></a>
+      		</center>
+    	</div>
+
+    	<!-- CEDULA - OPCIONAL SEGUN EL CASO -->
+    	<div class="col-4">
+    		<center>
+    			<br>
+      			<p>Nombre: {Nombre del empleado}</p>
+      		</center>
+    	</div>
+
+    	<!-- IDIOMA -->
+    	<div class="col-3">
+    		<center>
+    			<div class="dropdown" style="margin-top:4%">
+				 	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #3f51b5">
+				    	<i class='fas fa-language'></i>  Idioma
+				  	</button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="usuario.html">Español</a>
+				    <a class="dropdown-item" href="usuarioEn.html">English</a>
+				  </div>
+				</div>
+      		</center>
+    	</div>
+  	</div>
+
+  	<!-- MARGIN BOT - VARIA SEGUN EL CASO -->
+  	<div class="row">
+		<div class="col-sm">
+			<hr>
+			<br>
+			<br>
+    	</div>
+	</div>
+</div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-1">
+		</div>
+
+    	<div class="col-10">
+    	
+			
+			<!-- ELECCION ENTRE USUARIO O ADMIN -->
+			<div class="card-columns">
+
+				<!-- ACORDEON -->
+			  	<div class="card roundedtop">
+			    	
+
+
+			  		<div class="accordion" id="accordionExample">
+
+			  		  <!-- CERTIFICADO DE EMBAJADA 1 -->
+					  <div class="card roundedtop" style="background-color: #C4F8FC">
+					    <div class="card-header" id="headingOne" style="background-color: #2196f3" flag="false">
+					      <h2 class="mb-0">
+					      	<center><button id="One" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color:black;">
+					          Certificado de Embajada
+					        </button><i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrarle a la embajada que OLSoftware certifica: que durante las fechas determinadas realizas un viaje según el motivo que hayas especificado.">&#xe88f;</i></center>
+					      </h2>
+					    </div>
+
+					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+					      <div class="card-body">
+					        <center>
+					        	<div class="form-row">
+						      		<div class="col-md-2">
+						      			<div class="form-group">
+										  <label style="margin-top: 7%;">Embajada:</label>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+										    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba aquí...">
+										</div>
+						      		</div>
+						      		<div class="col-md-2">
+						      			<div class="form-group">
+										  <label style="margin-top: 7%;">Razón:</label>
+										</div>
+									</div>
+									<div class="col-md-4">
+						      			<div class="form-group">
+										  	<select class="form-control">
+											  <option>Vacaciones</option>
+											  <option>Capacitación</option>
+											</select>
+										</div>
+									</div>
+						      	</div>
+
+						      	<div class="form-row">
+						      		<div class="col-md-2">
+						      			<div class="form-group">
+										  <label style="margin-top: 7%;">Fecha Inicio:</label>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+										  <input type="date" class="form-control">
+										</div>
+									</div>
+						      		<div class="col-md-2">
+						      			<div class="form-group">
+										  <label style="margin-top: 7%;">Fecha Final:</label>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+										  <input type="date" class="form-control" id="usr">
+										</div>
+									</div>
+						      	</div>
+
+
+					        	
+					        </center>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- COMPROBANTE DE PAGO 2 -->
+					  <div class="card" style="background-color: #C4F8FC">
+					    <div class="card-header" id="headingTwo" style="background-color: #2196f3" flag="false">
+					      <h2 class="mb-0">
+					      	<center><button id="Two" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:black">
+					          Comprobante de Pago
+					        </button>
+					        <i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrar que OLSoftware certifica: que durante el mes en el año que especificaste recibiste los pagos correspondientes.">&#xe88f;</i></center>
+					      </h2>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					      <div class="card-body">
+					        <center>
+
+					        	<div class="form-row">
+						      		<div class="col-md-2">
+						        	</div>
+						        	<div class="col-md-4">
+						        		<p style="margin-top: 4%;">Especifica mes:</p>
+						        	</div>
+									<select class="form-control col-md-4" style="width:30%">
+									  <option>Enero</option>
+									  <option>Febrero</option>
+									  <option>Marzo</option>
+									  <option>Abril</option>
+									  <option>Mayo</option>
+									  <option>Junio</option>
+									  <option>Julio</option>
+									  <option>Agosto</option>
+									  <option>Septiembre</option>
+									  <option>Octubre</option>
+									  <option>Noviembre</option>
+									  <option>Diciembre</option>
+									</select>
+									<div class="col-md-2">
+						        	</div>
+								</div>
+
+								<div class="form-row">
+						      		<div class="col-md-2">
+						        	</div>
+						        	<div class="col-md-4">
+						        		<p style="margin-top: 4%;">Especifica año:</p>
+						        	</div>
+									<select class="form-control col-md-4" style="width:30%">
+									  <option>2010</option>
+									  <option>2011</option>
+									  <option>2012</option>
+									  <option>2013</option>
+									  <option>2014</option>
+									  <option>2015</option>
+									  <option>2016</option>
+									  <option>2017</option>
+									  <option>2018</option>
+									  <option>2019</option>
+									</select>
+									<div class="col-md-2">
+						        	</div>
+								</div>
+									
+					      	</center>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- CERTIFICADO LABORAL 3 -->
+					  <div class="card" style="background-color: #C4F8FC">
+					    <div class="card-header" id="headingThree" style="background-color: #2196f3" flag="false">
+					      <h2 class="mb-0">
+					      	<center><button id="Three" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:black">
+					          Certificado Laboral
+					        </button><i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrar que OLSoftware certifica: que efectivamente eres un empleado oficial de la empresa. Opcional: Puedes indicar si quieres que tu salario se muestre en el documento.">&#xe88f;</i></center>
+					        
+					      </h2>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					      <div class="card-body">
+					        <div class="checkbox">
+					          <center>
+					          	<label><input type="checkbox" value=""> Mostrar salario.</label>
+					          </center>
+							  
+							</div>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- INGRESOS Y RETENCIONES 4 -->
+					  <div class="card roundedtop" style="background-color: #C4F8FC">
+					    <div class="card-header" id="headingFour" style="background-color: #2196f3" flag="false">
+					      <h2 class="mb-0">
+					      	<center><button id="Four" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:black">
+					          Ingresos y Retenciones
+					        </button><i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrar que OLSoftware certifica: que durante el año especificado tuviste los ingresos y retenciones que se indiquen en el documento.">&#xe88f;</i></center>
+					        
+					      </h2>
+					    </div>
+					    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+					      <div class="card-body">
+					      	<center>
+
+					      		<div class="form-row">
+						      		<div class="col-md-2">
+						        	</div>
+						        	<div class="col-md-4">
+						        		<p style="margin-top: 4%;">Especifica año:</p>
+						        	</div>
+									<select class="form-control col-md-4" style="width:30%">
+									  <option>2010</option>
+									  <option>2011</option>
+									  <option>2012</option>
+									  <option>2013</option>
+									  <option>2014</option>
+									  <option>2015</option>
+									  <option>2016</option>
+									  <option>2017</option>
+									  <option>2018</option>
+									  <option>2019</option>
+									</select>
+									<div class="col-md-2">
+						        	</div>
+								</div>
+
+					      	</center>
+					      </div>
+					    </div>
+					  </div>
+
+
+					</div>
+
+
+
+
+
+			  	</div>
+
+
+			  	<!-- IMAGEN PREVIEW, DESCARGA Y CORREO -->
+			  	<div class="card">
+			  		<img id="preview" src="images/PreviewDefault.PNG" class="card-img-top" style="height:80%">
+			  		<br>
+
+			  		<center>
+			  			<div class="row">
+			  				<div class="col-sm">
+					  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+								 	Zoom Imagen
+								</button>
+							</div>
+							<div class="col-sm">
+					  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#downloadModal" onclick="checkDownload()">
+								 	<i class='fas fa-download'></i>  Descargar
+								</button>
+							</div>
+							<div class="col-sm">
+					  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#emailModal" onclick="checkEmail()">
+								 	<i class='fas fa-envelope'></i>  E-mail
+								</button>
+							</div>
+						</div>
+			  		</center>
+					
+
+					<!-- MODAL PREVIEW -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Previsualización del Documento</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<center>
+					      		<img id="zoom" src="images/PreviewDefaultZoom.PNG" style="max-width: 100%;max-height: 100%;height: 70vh;width: auto; left: 0;right: 0;top: 0;bottom: 0">
+					      		<br>
+					      	</center>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<!-- DESCARGAR -->
+					<div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="downloadModalLabel">Info Descarga</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<center>
+					      		<p id="downloadPopUp">Download</p>
+					      		<br>
+					      	</center>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<!-- ENVIAR POR EMAIL -->
+					<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="emailModalLabel">Previsualización del Documento</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<center>
+					      		<p id="emailPopUp">Holi Email</p>
+					      		<br>
+					      	</center>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			    	
+			 	</div>
+
+			</div>
+
+		</div>
+
+		<div class="col-1">
+		</div>
+
+	</div>
+
+</div>
+
+
+<!-- FOOTER -->
+<div class="container-fluid">
+
+	<!-- MARGIN TOP, PUEDE VARIAR SEGUN EL CASO -->
+	<div class="row">
+		<div class="col-sm">
+				<br>
+				<br>
+				<br>
+    	</div>
+	</div>
+
+	<!-- LOGO - IMAGEN DEL FOOTER -->
+	<div class="row">
+		<div class="col-12">
+			<div>
+				<img  class="footer-img" src="images/OLSoftware.PNG" alt="...">
+			</div>	
+    	</div>
+	</div>
+
+	<!-- TEXTO Y CONTENIDO DEL FOOTER -->
+	<div class="row">
+		<div class="col-12">
+			<div class="footer-text1">
+				<br>
+				<p>Proyecto Alamano</p>
+				<p>Desarrollado por Grupo de trabajo HCI</p>
+			</div>
+			<div class="footer-text2">
+				<br>
+				<i class='fas fa-building'></i><a href="http://www.olsoftware.com/" style="color:white !important">  www.olsoftware.com</a>
+				<p><i class='fas fa-envelope'></i> comercial@olsoftware.com<br><i class='fas fa-phone'></i> (57) 314 792 8467 - (57) 316 829 3406</p>
+			</div>	
+    	</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
