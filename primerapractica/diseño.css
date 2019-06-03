@@ -1,0 +1,156 @@
+.carousel-inner{
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.wrapper{
+	background-color:#0EAEB2;
+	width:100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.principal{
+	font-family: 'Amaranth', sans-serif;
+	font-size:50px;
+	color:#000000;
+	text-align: center;
+}
+
+.description{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 25px;
+	font-style: italic;
+	color:#000000;
+	text-align: center;
+}
+
+.subtitulos{
+	font-family: 'Amaranth', sans-serif;
+	color:#000000;
+	font-size: 35px;
+	font-style: bold;
+	text-align: center;
+}
+.textos{
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 20px;
+	color:#000000;
+	
+}
+.dudas{
+	background-color:#B2896F;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.containerD{
+  	margin-bottom: 2%;
+  	margin-top: 2%;
+}
+.btn-secondary{
+	font-family: 'Titillium Web', sans-serif;
+	margin-left: 55px;
+}
+
+.ingred{
+	width: 60%;
+    margin-left: 10%;
+   	margin-top: 10%;
+   	border-radius: 50%;
+   	border-style: solid;
+   	border-color: #FFFFFF;
+}
+
+.ingr-cont{
+	margin-bottom: 2%;
+}
+
+.ingText{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 17px;
+	font-style: bold;
+  	text-align: center;
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 200px;
+}
+
+.Prep{
+  	background-color: #B2896F;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+
+}
+
+.primeros{
+	background-color:#0EAEB2;
+}
+
+.segundos{
+	background-color:#FFB07E;
+}
+
+.btn-link{
+  	color: #FFFFFF !important;
+  	font-weight: bold;
+  	font-size: 15px !important;
+  	font-family: 'Titillium Web', sans-serif;
+}
+
+.card-body{
+	font-family: 'Titillium Web', sans-serif;
+	color:#000000 !important;
+}
+
+.image{
+	display: block;
+ 	width: 350px;
+  	height: 100%;
+}
+
+.overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 15px;
+  	right: 0;
+  	height: 100%;
+  	width: 350px;
+  	opacity: 0;
+  	transition: .5s ease;
+ 	background-color: #2E2108;
+}
+
+.element:hover .overlay {
+  	opacity: 1;
+}
+
+.text {
+  	color: white;
+  	font-size: 17px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.textPie{
+  	color: #000000;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.pieCont{
+  	margin-top: 30px;
+}
+
+.pieSec{
+  	background-color: #0EAEB2!important;
+  	height: 80px;
+}
