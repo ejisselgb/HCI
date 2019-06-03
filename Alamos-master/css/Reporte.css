@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url("../imagenes/teamwork1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 500px;
+margin-top: auto;
+margin-bottom: auto;
+width: 200%;
+background-color: rgba(255,255,255,0.8);
+}
+
+.card-header h3{
+color: white;
+}
+
+.tr-header{
+  background-color: #004FA6;
+}
+
+.th-left-line{
+  border-left: 1px solid black;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th, td {
+  padding: 2%;
+  text-align: left;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.row{
+  height: 150px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 {
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width: 80px;
+  height: 80px;
+}
