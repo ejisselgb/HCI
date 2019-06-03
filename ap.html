@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Películas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+	<script type="text/javascript" src= "datajson.json"></script>
+	<script type="text/javascript" src= "conection.js"></script>
+	<script type="text/javascript" src= "ap.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<!--************************************ Contenedor Grande ******************************-->
+	<div class="container-fluid grande">
+		<div id= "elemento">
+		
+		</div>
+		<div class="container-fluid title">
+			<h2 class="display-4 title-question" id="title">Películas</h2>
+		</div>
+			<div class="row main-cointainer-pelis">
+				<form action="" method="get">
+					<div class="imagen">
+					<img src="./Imagenes/peli.jpg">
+					</div>
+					<input type="text" placeholder="Nombre de la película" id="busqueda">
+					<br>
+					<br>
+					<button type="button"  id="boton" data-toggle="modal" data-target="#exampleModalScrollable" onclick= "searchMovie()"> Buscar</button>
+			</div>
+
+		<button type = "button" data-toggle="modalV" data-target="#exampleModal2Scrollable" value= "comedy" onclick="loadcatalog(this.value)"> Comedy </button>
+		<button type = "button" value= "romance" onclick="loadcatalog(this.value)"> Romance </button>
+		<button type = "button" value= "scary" onclick="loadcatalog(this.value)"> Scary </button>
+		<button type = "button" value= "animated" onclick="loadcatalog(this.value)"> Animated </button>
+
+
+
+	</div>
+
+
+	
+
+	<!--************************************ Modal Grande ******************************-->
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  			<div class="modal-dialog modal-dialog-scrollable" role="document">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="title123"></h5>
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+      				</div>
+      				<div class="modal-body">
+        				<div><img id="imagen12" style="width: 100%; overflow: hidden;"> </div>
+        				<h2 id="sinopsis"></h2>
+     				</div>
+      	<div class="modal-footer">
+        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    			</div>
+ 		</div>
+	</div>
+	<!-- Modal -->
+	<!--<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModal2ScrollableTitle" aria-hidden="true">
+  			<div class="modal-dialog modal-dialog-scrollable" role="document">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="title123">Comedia</h5>
+        					<button type="button" class="close" data-dismiss="modalV" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+      				</div>
+      				<div class="modal-body">
+        				<div><img id="elemento" style="width: 100%; overflow: hidden;"> </div>
+     				</div>
+      	<div class="modal-footer">
+        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    			</div>
+ 		</div>
+	</div>-->
+</body>
+</html>
