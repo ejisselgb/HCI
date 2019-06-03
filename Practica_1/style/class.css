@@ -1,0 +1,57 @@
+#up{
+  background-color: #3242B1;
+}
+
+#img1 {
+  width: 500px;
+  height: 335px;
+  border-radius: 20%;
+}
+
+#prep {
+  width: 500;
+  height: 351px;
+  border-radius: 5%;
+}
+
+#title {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#pt {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#preparacion {
+  text-align: justify;
+}
+
+#ingredientes {
+  text-align: justify;
+}
+
+#ingre {
+  text-align: center;
+}
+
+#i {
+  display: flex;
+}
+
+#d {
+  margin-left: 30px;
+}
+
+#st {
+  margin-bottom: 20px;
+}
+
+#carr {
+  text-align: center;
+}
+
+body {
+  background-color: #F3ECE7;
+}

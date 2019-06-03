@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sitio de recetas</title>
+    <link rel="stylesheet" type="text/css" href="./style/class.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid" id="up">
+      <h1 id="title">Bienvenido a mi sitio web de recetas</h1>
+      <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <p id="pt">Aqui aprenderemos a preparar comida de todo tipo</p>
+          </div>
+          <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid">
+      <div class="" id="st">
+        <h2 id="ingre">Ingredientes para hacer pan:</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" id="i">
+          <div class="">
+            <ul id="ingredientes">
+              <li>500 gramos de harina sin polvos de hornear</li>
+              <li>1 cucharadita de sal</li>
+              <li>1 cucharadita de azúcar</li>
+              <li>1 taza de agua tibia/caliente, y más de ser necesario</li>
+              <li>2 cucharadas de manteca derretida y tibia</li>
+              <li>1 sobre de levadura rápida (7 gramos)</li>
+            </ul>
+          </div>
+          <div class="" id="d">
+            <img src="./fotos/pan-blanco.jpg" alt="" id="img1">
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid">
+      <h2>Preparación:</h2>
+      <div class="row">
+        <div class="col-md-7">
+          <ol id="preparacion">
+            <li>En un jarro colocar el agua tibia, agregar el azúcar y revolver. Agregar la levadura y dejar reposar 5-8 minutos, debe formar espuma y burbujear, esto activa la levadura y les confirma que esta viva.</li>
+            <li>En un bol colocar la harina y la sal, revolver, hacer un volcán  y poner en el centro la manteca derretida, y la mezcla de agua, azúcar y levadura.</li>
+            <li>Amasar todo hasta obtener una masa tierna que suene, toma unos 10 minutos, agregar mas agua de ser necesario, se puede usar una máquina de hacer pan o una Kitchenaid con la paleta de amasado (yo le dí 5 minutos de amasado en la KitchenAid con el gancho y en velocidad 2).</li>
+            <li>Hacer un tronco con la masa y cortarla en 12 trozos iguales (70 gramos), cubrirlos con un paño de cocina e ir trabajando cada bolita dandole forma de pan.</li>
+            <li>Dejar subir, leudar por 1 hora en un lugar tibio cubiertos con el paño de cocina.</li>
+            <li>Precalentar el horno a 350F o 180C.</li>
+            <li>Pincelar con leche o huevo batido. Pinchar los panes con un tenedor y llevar al horno. Hornear por 25-30 minutos o hasta que estén ligeramente dorados.</li>
+            <li>Servir calientes, si sobran recalentarlos envueltos en un paño húmedo en el microonda. O abrir y tostar.</li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <img src="./fotos/prep.jpg" alt="" id="prep">
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <h2 id="carr">Imagenes de panes</h2>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-mid-8">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./fotos/pan1.jpg" >
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pan #1</h5>
+                <p>Texto de ejemplo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./fotos/pan2.jpg" >
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pan #2</h5>
+                <p>Texto de ejemplo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./fotos/pan3.jpg" >
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pan #3</h5>
+                <p>Texto de ejemplo</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+        <div class="col-mid-2"></div>
+      </div>
+    </div>
+
+    <hr>
+  </body>
+</html>
