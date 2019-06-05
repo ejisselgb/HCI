@@ -1,0 +1,27 @@
+#tituloP{
+  text-align: center;
+  font-family:Tangerine;
+}
+#todoE{
+	background-color: #ababab;
+	width: 100%;
+	left: 100%;
+}
+.container-fluid{
+	background-color: #ababab;
+}
+#texto{
+	width: 100%;
+	left: 100%;
+	background-color: #ababab;
+}
+#marco{
+    width: 100%;
+    left: 100%;
+    margin-top: 0%;
+}
+#buscador{
+	margin: 0 auto;
+	
+	text-align: center;	
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="container" id = "todoE">
+	<h1>Netfox</h1>
+	<hr>
+	<div class="container-fluid">
+		<div class= "container-fluid" id="marco">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="img10.jpeg">
+			</div>
+			<div class="col-md-4">
+				<img src="img10.jpeg">
+			</div>
+			<div class="col-md-4">
+				<img src="img10.jpeg">
+			</div>
+		</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div id = "texto">հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում, իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus PageMaker-ը, որը ներառում է Lorem Ipsum-ի տարատեսակներ</div>
+			</div>
+			<div class="col-md-4">
+				<div id = "texto">հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում, իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus PageMaker-ը, որը ներառում է Lorem Ipsum-ի տարատեսակներ</div>
+			</div>
+			<div class="col-md-4">
+				<div id = "texto">հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում, իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus PageMaker-ը, որը ներառում է Lorem Ipsum-ի տարատեսակներ</div>
+			
+			</div>
+		
+			<div class="row" id = "buscador">
+				<input id = "buscar" type="text" placeholder= "Buscar pelicula">
+				<button onclick="search()" style="background-color: purple; color: white;">Buscar</button>
+
+			</div>
+			<hr>
+			<div>
+				<img id = "imagen">
+			</div>
+			<div class="row" id = "buscador">
+				<button type = "button" value ="comedy" onclick="loadCatalogo(this.value)" style="background-color: purple; color: white;">Comedia</button>
+				<button type = "button" value ="scary" onclick="loadCatalogo(this.value)" style="background-color: purple; color: white;">Terror</button>
+				<button type = "button" value ="animated" onclick="loadCatalogo(this.value)" style="background-color: purple; color: white;">Animadas</button>
+				<button type = "button" value ="romance" onclick="loadCatalogo(this.value)" style="background-color: purple; color: white;">Romance</button>
+
+			</div>
+
+		</div>
+		<div id = "imag"> </div>
+		<div id = "elemento"></div>
+	</div>
+	
+
+	</div>
+<script type="text/javascript" src= "infoMovie.js"></script>
+<script type="text/javascript" src= "dataMovies.json"></script>
+<!--<link rel="stylesheet" type="text/css" href="home.css">-->
+<script type="text/javascript" src= "config.js"></script>
+
+
+
+</body>
+
+</html>
