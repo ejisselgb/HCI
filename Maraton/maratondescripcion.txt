@@ -1,0 +1,65 @@
+Para este ejercicio de práctica y con el fin de dar cierre a algunos de los temas, realizaremos esta maratón. Recuerde descargar los archivos adjuntos para probar su código. Recuerde que puede ver las diapositivas y elementos de la clase. Solo puede utilizar internet para probar Api's y elementos propios de las guías de los lenguajes de programación si así se requiere.
+
+
+
+Ejercicio 1: (Individual)
+
+Cree una función que le permita remover el primer y último caracter de una cadena de texto. No se preocupe por las cadenas menores a dos caracteres. Deberá validarlo con el archivo de prueba
+
+
+
+Ejercicio 2:
+
+Ajuste la interfaz del achivo "Interfaz.html", deberá ser responsive. En este ejercicio se espera que los elementos encajen correctamente, entre ellos, sean armoniosos y apliquen los principios de Gestald. Se deberá utilizar Boostrap
+
+
+Ejercicio 3:
+
+Conectarse a la API de Foursquare y realizar los siguientes pasos
+
+https://developer.foursquare.com/docs/api
+
+1. Crear una app y acceder a los lugares cercanos a la javeriana cali por medio del API.
+2. Obtener el id del edificio Guayacanes y buscar las fotos disponibles del lugar
+3. Concatenar la url de la imagen y mostrarla en el navegador
+
+
+Ejercicio 4:
+
+Descargue la aplicación móvil del repositorio de GitHUB y construya una vista para la muestra de medicamentos, la cual posea una lista. Seguir el estilo de la interfaz ya establecido. El listado deberá contener estilos, deberá verse agradable
+
+https://facebook.github.io/react-native/docs/using-a-listview
+
+
+Ejercicio 5:
+
+Un equipo de fútbol terminó el campeonato. El resultado de cada partido se ve como "x: y". Los resultados de todos los partidos se registran en la colección (Cómo un arreglo).
+
+
+Por ejemplo: ["3: 1", "2: 2", "0: 1", ...]
+
+Escriba una función que tome dicha colección y cuente los puntos de nuestro equipo en el campeonato. Reglas para contar puntos para cada partido:
+
+si x> y - 3 puntos
+si x <y - 0 punto
+si x = y - 1 punto
+
+
+
+Ejercicio 6:
+
+A la interfaz del archivio "Interfaz.html", construir un formulario de contacto y guardar los datos en un objeto (tipo JSON). La respuesta en consola deberá a parecer de la siguiente manera.
+
+{usuarios:[{
+	user1: {nombre: "user1", apellido: "user1", email: "user1@email.com", telefono: 1111111, motivo: "Esto es una prueba"},
+	user2: {nombre: "user2", apellido: "user2", email: "user2@email.com", telefono: 1111111, motivo: "Esto es una prueba"},
+	....
+}]
+}
+
+El objeto final deberá contener al menos 5 registros.
+
+
+Ejercicio 7:
+
+Genere un listado de manera dinámica a patir de la información proporcionada en el archivo "data.json". El listado contiene información de libros. Estas deberán ser categorizadas y mostradas en una interfaz.

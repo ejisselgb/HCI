@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Mi tienda de libros
+	</title>
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="septimopunto.js"></script>
+</head>
+<body>
+<h1>Bienvenido a mi tienda de libros</h1>
+<h2>Realizar tu compra online desde la comodida de tu casa</h2>
+<h3>Libros</h3>
+<h4>Memorias de una salvaje</h4>
+<img src="https://images-na.ssl-images-amazon.com/images/I/41KXni3bRWL._SX326_BO1,204,203,200_.jpg"/>
+<p>EUR 15.00</p>
+<button>Agregar al carrito</button>
+<h2>Brújulas que buscan sonrisas perdidas</h2>
+<img src="https://images-na.ssl-images-amazon.com/images/I/51HLTscgBNL._SX327_BO1,204,203,200_.jpg"/>
+<p>EUR 12.20</p>
+<button>Agregar al carrito</button>
+<h2>El legado de la villa de las telas</h2>
+<img src="https://images-eu.ssl-images-amazon.com/images/I/515Yh%2BwYtzL.jpg"/>
+<p>EUR 10.20</p>
+<button>Agregar al carrito</button>
+
+<h2>Carrito de compras</h2>
+<p>Aquí se mostrará el costo total por todos lo objetos seleccionados a comprar</p>
+<button>Calcular Costo de los productos</button>
+
+<div class="">
+  <button value="books" onclick="loadCatalog(this.value)">Books</button>
+  <button value="Notebook" onclick="loadCatalog(this.value)">Notebook</button>
+  <button value="pencils" onclick="loadCatalog(this.value)">Pencils</button>
+
+</div>
+
+<div class="" id="elemento">
+
+</div>
+
+<div class="" id="formulario">
+	<br>
+	<br>
+	<input type="text" id="nombre" placeholder="Nombre...">
+	<br>
+	<input type="text" id="apellido" placeholder="Apellido...">
+	<br>
+	<input type="text" id="email" placeholder="Email...">
+	<br>
+	<input type="number" min="0" id="telefono" placeholder="Telefono...">
+	<br>
+	<input type="text" id="motivo" placeholder="Motivo...">
+	<br>
+	<button onclick="enviar()">Enviar</button>
+</div>
+
+</body>
+</html>
