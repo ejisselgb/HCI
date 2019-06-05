@@ -1,0 +1,32 @@
+
+.logo{
+	width: 55%;
+	height: 55%;
+}
+
+.my-lg-0{
+	margin-right: 310px;
+}
+
+.logos{
+	font-size: 30px;
+
+}
+.nameLog{
+	font-size: 12px;
+}
+.imagen{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+
+.container{
+	padding-top: 20px;
+	background-color: #C6FFD6;
+}
+
+.informacion{
+	margin-bottom: 20px;
+}
