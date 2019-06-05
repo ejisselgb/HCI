@@ -1,0 +1,22 @@
+.row-center {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+.card-header{
+    color: #ffffff
+}
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  
+  padding: 10px 100px; }
