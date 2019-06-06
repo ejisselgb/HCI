@@ -1,0 +1,52 @@
+body{
+	font-size: 120%;
+	color: #FF0000; 
+}
+
+#letra{
+	font-family: Anton;
+	font-size: 80px;
+}
+
+#letra1{
+	font-family: Acme;
+	font-size: 20px;	
+}
+
+#letra2{
+	font-family: Abel;
+	font-size: 25px;
+}
+
+#im{
+	width: 100%;
+}
+
+.container-fluid{
+	background-color:#F2F3F4;
+}
+
+.container{
+	background-color:#F2F3F4;	
+}
+#lat{
+	background-color:#F2F3F4; 
+}
+#imgcarousel{
+	width: 1280px;
+	height: 750px;
+}
+#larga{
+    width: 80%;
+    margin-left: 50px;
+    position: absolute;
+}
+#borde{
+	border-radius: 12%;
+}
+
+#h6{
+	border-radius: 12%;	
+	margin-left: 80px;
+	position: absolute;
+}

@@ -1,0 +1,104 @@
+body{
+	font-size: 120%;
+	background-color: #2980B9;
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+ 	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+  	width: 100%;
+	background-color: #2980B9;
+  	color: white;
+	padding: 14px 20px;
+ 	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+ 	cursor: pointer;
+}
+
+input[type=submit]:hover {
+ 	background-color: #2471A3;
+}
+
+#fondo {
+	background-color: #F2F3F4;	
+}
+
+#logo {
+	margin-bottom: 50px;
+}
+
+#inicio {
+	margin-top: 120px;
+	margin-left: 50px;
+}
+
+#contacto {	
+	margin-top: 108px;
+}
+
+#peli {
+	margin-top: 107px;
+	margin-left: 50px;
+}
+
+#opciones {
+	width: 200px;
+	height: 200px;
+}
+
+#buscar {
+ 	border-radius: 10px;
+ 	background-color: #FFFFFF;
+ 	padding: 20px;
+}
+
+#carrusel {
+	height: 80px;
+	border-radius: 10px;
+}
+
+#face {
+	margin-top: 120px;
+	margin-left: 31px;
+}
+
+#twit {
+	margin-top: 120px;
+	margin-left: 31px;
+	border-right: 80px;
+}
+
+#ins {
+	margin-top: 120px;
+	margin-left: 31px;
+}
+
+#comedia {
+	margin-right: 35px;
+	margin-left: 35px; 
+}
+
+#miedo {
+	margin-right: 35px;
+	margin-left: 35px; 
+}
+
+#romance {
+	margin-right: 35px;
+	margin-left: 35px; 
+}
+
+#animada {
+	margin-right: 35px;
+	margin-left: 35px; 
+}
+

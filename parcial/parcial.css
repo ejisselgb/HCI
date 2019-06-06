@@ -1,0 +1,94 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+   margin: 0;
+   margin-bottom: 100%;
+   font-size: 120%;
+   background-color: #C1EACB;
+}
+
+header{
+   background-color: #CCEDD4;
+   flex: 0 0 auto;
+}
+
+.main-content{
+   flex: 1 0 auto;
+}
+
+footer{
+   background-color: #CCEDD4;
+   flex: 0 0 auto;  
+   bottom: 0;
+   position: fixed;
+   width: 100%;
+}
+
+input[type=text], select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+input[type=submit] {
+   position: relative;
+   width: 100%;
+   background-color: #EBEFF1;
+   color: black;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   right: 30px;
+}
+
+input[type=submit]:hover {
+   background-color: #2471A3;
+}
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 208px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px;
+   width: 268px;
+}
+
+
+.semi-square {
+   position: relative;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   right: 15px;
+}
+
+.blue    { background-color: #fff; }
+
+.blue select    { color: #000000; }
+
+#imagen {
+   width: 50px;
+   height: 50px;
+}
+
+
+#tamañoimg {
+   width: 100px;
+   height: 100px;
+}

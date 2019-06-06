@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mercado</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="parcial.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="data.json"></script>
+	<script type="text/javascript" src="parcial.js"></script>
+</head>
+<body id="fondo">
+	<header>
+		<div class="col-md-12" align="center">
+			<div class="col-md-11">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-md-1" align="center">
+						<h3>Logo</h3>
+					</div>	
+					<div class="col-md-2" align="center">
+						<div class="styled-select blue semi-square" id="caja">
+						  <select>
+						    <option>Productos </option>
+				            <option>Moda</option>
+				            <option>Tecnología e informática</option>
+				            <option>Jugueteria</option>
+				            <option>Entretenimiento</option>
+						  </select>
+						</div>
+					</div>
+					<div class="col-md-1" align="center">
+						Ofertas
+					</div>	
+					<div class="col-md-1" align="center">
+						Regalos
+					</div>	
+					<div class="col-md-1" align="center">
+						Vender
+					</div>
+					<div class="col-md-2">
+						<input type="text" id="pelicula" name="firstname" placeholder="Buscar">
+					</div>
+					<div class="col-md-1">
+						<input type="submit" value="Ir"	>	
+					</div>
+					<div class="col-md-1">
+						<div class="row-md-1">
+							<img src="perfil.png" id="imagen">
+						</div>
+						<div class="row-md-1">
+							Iniciar sesión
+						</div>
+					</div>
+					<div class="col-md-1">
+						<div class="row-md-1">
+							<img src="carrito.png" id="imagen">
+						</div>
+						<div class="row-md-1">
+							Carrito
+						</div>
+					</div>
+					<div class="col-md-1">
+						<div class="row-md-1">
+							<img src="ayuda.png" id="imagen">
+						</div>
+						<div class="row-md-1">
+							Ayuda
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-md-2"><hr></hr></div>
+    </header>
+	<div class="container-fluid" align="center">
+		<div class="row-md-9" align="center">
+			<div class="col-md-11" align="center">
+				<img src="publ.jpg">
+			</div>
+			<div class="col-md-5">
+				<h1>Publicidad</h1>
+				<p></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12" align="center">
+		<div class="row-md-6" align="center">
+			<button value="Los mas vendidos" onclick="loadCatalog(this.value)" id="pr">Los mas vendidos</button>
+			<button value="Novedades" onclick="loadCatalog(this.value)" id="pr">Novedades</button>
+			<button value="Descuentos" onclick="loadCatalog(this.value)" id="pr">Descuentos</button>
+			<br></br>
+		</div>
+	</div>
+
+	<div class="row justify-content-center align-items-center" id="productos"></div>
+
+	<div class="row-md-2"><br></br></div>
+    <footer>
+		<div class="row-md-1" align="center">
+			<h3>Logo</h3>
+		</div>
+		<div class="row justify-content-center align-items-center">
+			<div class="col-md-3" align="center">
+				Servicios destacados
+			</div>	
+			<div class="col-md-3" align="center">
+				Trabaja con nosotros
+			</div>	
+			<div class="col-md-3" align="center">
+				Avisos de privacidad
+			</div>	
+		</div>
+	</footer>
+
+</body>
+</html>
