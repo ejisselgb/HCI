@@ -1,0 +1,60 @@
+.headerImg{
+  width: 40px;
+}
+
+
+.col-md-1{
+  padding: 2px ;
+}
+.col-md-2{
+  padding: 2px;
+}
+.col-md-3{
+  padding: 2px ;
+}
+
+.row h-100 justify-content-center align-items-center{
+  margin: 0px;
+}
+.headerTextImg{
+  font-size: 10px;
+}
+
+.bodyImg{
+  width: 400px;
+
+}
+
+.input-group-append{
+  border-color: #355A82 !important;
+  background-color: #2369B1 !important;
+
+}
+.input-group-append{
+
+}
+#boton:hover{
+  color:white !important;
+  background-color: #3886D8 !important;
+
+}
+#boton{
+  color:white !important;
+  border-color: #3886D8 !important;
+}
+
+.carousel.slide{
+  width: 300px !important;
+  height: 300px !important;
+}
+.imgCarrusel{
+  width: 200px;
+  height: 200px;
+}
+
+.footerImg{
+  width: 40px;
+}
+#footerH3{
+  padding: 10px;
+}
