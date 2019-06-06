@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Mi tienda de libros
+	</title>
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<style>
+html{
+  font-family: Arial;
+  
+}
+body{
+	background-color:white;
+}
+button {
+	background-color: #71d184;
+	border-radius:4px;
+	border: 0px;
+	color : black;
+	width:60%;
+	padding: 10px ;
+}
+button:hover{
+	background-color: #97dea5;
+}
+img{
+ width: 250px;
+}
+
+#comprar{
+	width:100% !important;
+	
+}
+
+h2{
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px){
+	
+
+}
+
+div .col{
+	border-color: #8092a3 !important;
+	border:2px solid;
+	border-radius: 2px;
+	padding : 10px;
+	
+		
+}
+#header{
+	padding: 0px !important;
+	margin: 0 auto !important;
+	background-color: #6ac97d ;
+
+}
+
+.container-fluid{
+	padding: 0px !important;
+	margin:  0 auto !important;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container-fluid" >
+<div class="row justify-content-center" id="header">
+<h1>Bienvenido a mi tienda de libros</h1>
+</div>
+
+<br>
+<br>
+<div class="row justify-content-center">
+
+<h2>Realizar tu compra online desde la comodida de tu casa</h2>
+</div>
+</div>
+<div class="container">
+<div class ="row" >
+<br>
+<br>
+<h1>Libros</h1>
+
+</div>
+
+
+
+<div class="row justify-content-center">
+<div class="col" align="center">
+<h2>Memorias de una salvaje</h4>
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/41KXni3bRWL._SX326_BO1,204,203,200_.jpg"/>
+<p>EUR 15.00</p>
+<button >Agregar al carrito</button>
+</div>
+<div class="col" align="center">
+<h2>Brújulas que buscan sonrisas perdidas</h2>
+<img src="https://images-na.ssl-images-amazon.com/images/I/51HLTscgBNL._SX327_BO1,204,203,200_.jpg"/>
+<p>EUR 12.20</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class= "col" align="center">
+<h2>El legado de la villa de las telas</h2>
+<img src="https://images-eu.ssl-images-amazon.com/images/I/515Yh%2BwYtzL.jpg"/>
+<p>EUR 10.20</p>
+<button>Agregar al carrito</button>
+</div>
+</div>
+<div class="row">
+<br>
+<br>
+</div>
+<div class="row justify-content-center">
+
+<h2>Carrito de compras</h2>
+</div>
+<div class="row justify-content-center">
+<h3>Aquí se mostrará el costo total <br>
+por todos lo objetos seleccionados a comprar</h3>
+</div>
+<div class="row justify-content-center">
+<center>
+<button id="comprar">Calcular Costo de los productos</button>
+</div>
+<center>
+</div>
+</div>
+
+
+</body>
+</html>
