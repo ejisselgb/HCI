@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página de recetas</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="ejercicio1.2.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+	<div class="container-fluid section_slide">
+		<div class="row1">
+			<div class="col-md_section_slide">
+				<h1>Bienvenido a mi sitio web de recetas</h1>
+				<p>Aquí aprenderás como hacer pastel de chocolate</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid_section_ingredientes">
+		<div class="h2"> <h2>Ingredientes</h2> </div>
+		<div class="row" style="height:50%"/>
+			<div class="col-md-2">  
+				<div>
+				<p>1 taza de harina.</p> 
+				<img src="taza_harina.jpg" alt="harina para pastel" title="harina" class="rounded-circle image" />
+				</div>
+			</div>
+			<div class="col-md-2">  
+				<div>
+				<p>1/4 de taza de cocoa en polvo.</p>
+				<img src="cocoa.jpg" alt="cocoa para pastel" title="cocoa" class="rounded-circle image"/>
+				</div>
+			</div>
+			<div class="col-md-2">  
+				<div>
+				<p>1/4 de taza de mantequilla suave.</p>
+				<img src="mantequilla.jpeg" alt="mantequilla para pastel" title="mantequilla" class="rounded-circle image"/>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div>
+				<p>1 huevo.</p>
+				<img src="huevo.jpeg" alt="huevo para pastel" title="huevo" class="rounded-circle image"/>
+				</div>
+			</div>
+			<div class="col-md-2">  
+				<div>
+				<p>1 1/2 tazas de azúcar glass para el glaseado.</p>
+				<img src="azucar_grass.jpg" alt="azucar para pastel" title="azucar" class="rounded-circle image"/>
+				</div>
+			</div>
+
+			<div class="col-md-2"> 
+				<div>
+				<p>3 cucharadas de mantequilla para el glaseado.</p>
+				<img src="agua.jpg" alt="qmantequilla para pastel" title="qmantequilla" class="rounded-circle image"/>
+				</div>
+			</div> 
+		</div>
+		<div class="row" style="height:50%"/>
+			<div class="col-md-2">  
+				<div>
+				<p>1 taza de azúcar.</p>
+				<img src="taza_azucar.jpg" alt="azucar para pastel" title="azucar"  class="rounded-circle image"/>
+				</div>
+			</div>
+			<div class="col-md-2">  
+				<div>
+				<p>1 cucharadita de bicarbonato de sodio.</p>
+				<img src="bicarbonato.jpeg" alt="bicarbonato para pastel" title="bicarbonato" class="rounded-circle image"/>
+				</div>
+			</div>
+			<div class="col-md-2">  
+				<div>
+				<p>1/2 cucharadita de vainilla.</p>
+				<img src="vainilla.jpg" alt="vainilla para pastel" title="vainilla" class="rounded-circle image"/>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div>
+				<p>1/4 de cucharadita de sal.</p>
+				<img src="sal.jpg" alt="sal para pastel" title="sal" class="rounded-circle image"/>
+				</div>
+			</div>
+			<div class="col-md-2">  
+				<div>
+				<p>125 gramos de chocolate para el glaseado.</p>
+				<img src="chocolate_glaseado.jpg" alt="chocolate para pastel" title="chocolate" class="rounded-circle image"/>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div>
+				<p>3 cucharadas de agua para el glaseado.</p>
+				<img src="agua.jpg" alt="agua para pastel" title="agua" class="rounded-circle image"/>
+				</div>
+			</div> 
+		</div>
+		</div>
+		<div class="container-fluid section_recipe">
+
+		<h3 class="display-4 title-question title-prepare" id="title-recipe">Preparación</h3>
+		
+		<div class="row">
+			<div class="col-md-2"></div>
+
+			<div class="col-md-8">
+				<div id="accordion">
+
+					<div class="card">
+					    <div class="card-header brown-dark" id="headingOne">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Paso 1:
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					      <div class="card-body">
+					        En un recipiente combinar harina, azúcar, cocoa, polvo hornear, bicarbonato y sal. Revolver a baja velocidad con la batidora.
+					      </div>
+					    </div>
+ 	 				</div>
+
+ 	 				<div class="card">
+			    		<div class="card-header brown-light" id="headingTwo">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Paso 2:
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					      <div class="card-body">
+					        Agregar leche, mantequilla y vainilla. Batir con batidora a velocidad baja, luego batir 2 minutos a velocidad media, agregar huevo y batir 2 minutos más. Poner en un molde redondo de 22 cms. de diámetro, engrasado y enharinado.
+					      </div>
+					    </div>
+		  			</div>
+
+		  			<div class="card">
+					    <div class="card-header brown-dark" id="headingThree">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Paso 3:
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					      <div class="card-body">
+					        Hornear a 350ºF por 30 o 35 minutos. Sacar del horno y enfriar en una rejilla 10 minutos. Sacar del molde y dejar enfriar completamente.
+					      </div>
+					    </div>
+		  			</div>
+
+		  			<div class="card">
+					    <div class="card-header brown-light" id="headingFour">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					          Paso 4:
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+					      <div class="card-body">
+					        Para hacer el glaseado: derretir chocolate y mantequilla a fuego suave, remover del fuego y agregar el azúcar glass y el agua caliente moviendo siempre. Si es necesario agregar mas de agua para tener la consistencia de glaseado.
+					      </div>
+					    </div>
+		 	 		</div>
+
+		  			<div class="card">
+					    <div class="card-header brown-dark" id="headingFive">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					          Paso 5:
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+					      <div class="card-body">
+					        Glasear el pastel y dejar escurrir por los lados a cubrirlo totalmente.
+					      </div>
+					    </div>
+ 	 				</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<div class="container-fluid section_similares">
+		<h2 class="display-4 title-question title-similares" id="title-recipe">Más recetas</h2>
+
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				
+				<div class="bd-example">
+			  		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+					    <ol class="carousel-indicators">
+					      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+					      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					    </ol>
+					    <div class="carousel-inner">
+					      <div class="carousel-item carousel-slide active">
+					        <img src="pieFrambuesa.jpg" class="d-block w-100" alt="...">
+					        <div class="carousel-caption d-none d-md-block">
+					          <h5>Pie de Frambuesa</h5>
+					          <p1>Aprende a preparar el mejor pie de frambuesa aquí</p1>
+					        </div>
+					      </div>
+					      <div class="carousel-item carousel-slide">
+					        <img src="fondoIngredientes2.jpg" class="d-block w-100" alt="...">
+					        <div class="carousel-caption d-none d-md-block">
+					          <h5>Postre de Maracuyá</h5>
+					          <p1>Un postre saludable y ligero. Aprende como hacerlo aquí</p1>
+					        </div>
+					      </div>
+					      <div class="carousel-item carousel-slide">
+					        <img src="amapola.jpg" class="d-block w-100" alt="...">
+					        <div class="carousel-caption d-none d-md-block">
+					          <h5>Torta de amapola con limon</h5>
+					          <p1>Un postre especial para fiestas y reuniones familiares</p1>
+					        </div>
+					      </div>
+					    </div>
+					    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					      <span class="sr-only">Previous</span>
+					    </a>
+					    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					      <span class="sr-only">Next</span>
+					    </a>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	</div> 
+</body>
+</html>
+</body>
+</html>
