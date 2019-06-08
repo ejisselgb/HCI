@@ -1,0 +1,127 @@
+.row1{
+	background-image: url("Pastel2.jpg");
+	background-color: #cccccc;
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+body {
+	font-family: arial;
+}
+
+.image{
+		width: 150px;
+		height: 150px;
+}
+.col-md_section_slide{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.h2{
+	text-align: center;
+	color:white;
+}
+
+
+.container-fluid_section_ingredientes{
+	/*background-image: url("fondoIngredientes3.jpg");*/
+	background-color: #1C0909;
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.row {
+  height: 150px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 600%;
+  left: 100%;
+}
+p{
+	color:white;
+}
+.title-prepare{
+	text-align: center;
+	color:black;
+}
+
+.section_recipe{
+	background-image: url("Pastel_Chocolate.jpeg");
+	background-color: #1C0909;
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+.carousel-slide{
+  height: 100px;
+}
+
+.section_recipe{
+	background-color: #000000;
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.section_similares{
+	background-color: #EEE2C9
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title-question{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 2em !important;
+}
+
+
+.image-recipe{
+    width: 30%;
+    margin-left: 20%;
+}
+
+
+.main-cointainer-recipe{
+  margin-top: 50px;
+}
+#title-recipe{
+  font-weight: bold;
+}
+
+.title-prepare{
+  padding: 30px;
+}
+
+.carousel-slide{
+  height: 100px;
+}
